@@ -2,6 +2,7 @@ package net.irrelevent.neardeadlythreat;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.irrelevent.neardeadlythreat.block.ModBlocks;
 import net.irrelevent.neardeadlythreat.item.ModItemGroups;
 import net.irrelevent.neardeadlythreat.item.ModItems;
 import org.slf4j.Logger;
@@ -16,6 +17,7 @@ public class NearDeadlyThreat implements ModInitializer {
 
 		ModItems.registerModItems ();
 		ModItemGroups.registerItemGroups ();
+		ModBlocks.registerModBlocks();
 
 		LOGGER.info("Hello Fabric world!");
 	}

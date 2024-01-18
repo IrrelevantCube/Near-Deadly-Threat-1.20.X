@@ -1,6 +1,12 @@
 {
   "item.ndt.dominite": "Dominite",
   "item.ndt.refined_dominite": "Refined Dominite",
+  "item.ndt.raw_chrodomach": "Raw Chrodomach",
+  "item.ndt.refined_chrodomach": "Refined Chrodomach",
+
+  "block.ndt.dominite_ore": "Dominite Ore",
+  "block.ndt.dominite_block": "Block of Dominite",
+  "block.ndt.chrodomach_block": "Block of Chrodomach",
 
   "itemgroup.miscll": "Miscll."
 }
