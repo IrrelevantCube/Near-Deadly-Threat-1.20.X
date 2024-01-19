@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "ddd",
+    "ddd",
+    "ddd"
+  ],
+  "key": {
+    "d": {
+      "item": "ndt:dominite"
+    }
+  },
+  "result": {
+    "item": "ndt:dominite_block"
+  }
+}
