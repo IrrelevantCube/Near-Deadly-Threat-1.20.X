@@ -30,6 +30,7 @@ public class ModBlocks {
         return Registry.register (Registries.ITEM, new Identifier(NearDeadlyThreat.MOD_ID, name),
                 new BlockItem(block, new FabricItemSettings()));
     }
+
     public static void registerModBlocks() {
         NearDeadlyThreat.LOGGER.info("Registering ModBlocks For " + NearDeadlyThreat.MOD_ID);
     }

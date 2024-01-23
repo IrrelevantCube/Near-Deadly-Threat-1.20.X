@@ -15,12 +15,14 @@ public class ModItems {
     public static final Item REFINED_DOMINITE = registerItem ("refined_dominite", new Item(new FabricItemSettings()));
     public static final Item RAW_CHRODOMACH = registerItem ("raw_chrodomach", new Item(new FabricItemSettings ()));
     public static final Item REFINED_CHRODOMACH = registerItem ("refined_chrodomach", new Item(new FabricItemSettings ()));
+
     private static void addItemsToIngredientTabItemGroup(FabricItemGroupEntries entries) {
 
     }
     private static Item registerItem(String name, Item item) {
         return Registry.register (Registries.ITEM, new Identifier (NearDeadlyThreat.MOD_ID, name), item);
     }
+
 
     public static void registerModItems() {
         NearDeadlyThreat.LOGGER.info("Registering Mod Items for " + NearDeadlyThreat.MOD_ID);

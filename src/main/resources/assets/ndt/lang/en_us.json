@@ -8,5 +8,7 @@
   "block.ndt.dominite_block": "Block of Dominite",
   "block.ndt.chrodomach_block": "Block of Chrodomach",
 
-  "itemgroup.miscll": "Miscll."
+  "itemgroup.miscll": "Miscll.",
+
+  "effect.ndt.aqua_proficient": "Aqua Proficient"
 }
