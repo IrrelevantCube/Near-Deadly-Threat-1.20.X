@@ -23,6 +23,9 @@ public class ModItemGroups {
                 entries.add(ModBlocks.DOMINITE_BLOCK);
                 entries.add(ModBlocks.CHRODOMACH_BLOCK);
 
+                entries.add(ModItems.CRAB_LEGS);
+
+
     }).build ());
 
     public static void registerItemGroups() {
