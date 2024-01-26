@@ -4,11 +4,10 @@ package net.irrelevent.neardeadlythreat.effect;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectCategory;
-import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.util.math.Vec3d;
 
-public class AquaProficientStatusEffect extends StatusEffect {
-    public AquaProficientStatusEffect(StatusEffectCategory statusEffectCategory, int color) {
+public class AquaProficientMobEffect extends StatusEffect {
+    public AquaProficientMobEffect(StatusEffectCategory statusEffectCategory, int color) {
         super (statusEffectCategory, color);
     }
     @Override

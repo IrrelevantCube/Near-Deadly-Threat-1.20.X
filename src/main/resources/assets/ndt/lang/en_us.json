@@ -3,6 +3,7 @@
   "item.ndt.refined_dominite": "Refined Dominite",
   "item.ndt.raw_chrodomach": "Raw Chrodomach",
   "item.ndt.refined_chrodomach": "Refined Chrodomach",
+  "item.ndt.dominite_isotope": "Dominite Isotope",
 
   "block.ndt.dominite_ore": "Dominite Ore",
   "block.ndt.dominite_block": "Block of Dominite",
@@ -11,6 +12,7 @@
   "itemgroup.miscll": "Miscll.",
 
   "item.ndt.crab_legs": "Brachymite Crab Legs",
+  "item.ndt.cooked_crab_legs": "Cooked Brachymite Crab Legs",
 
   "effect.ndt.aqua_proficient": "Aqua Proficient"
 }

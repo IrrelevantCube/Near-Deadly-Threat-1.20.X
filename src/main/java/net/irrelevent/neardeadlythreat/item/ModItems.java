@@ -13,11 +13,12 @@ import net.minecraft.util.Identifier;
 public class ModItems {
     public static final Item DOMINITE = registerItem ("dominite", new Item(new FabricItemSettings()));
     public static final Item REFINED_DOMINITE = registerItem ("refined_dominite", new Item(new FabricItemSettings()));
+    public static final Item DOMINITE_ISOTOPE = registerItem ("dominite_isotope", new Item(new FabricItemSettings()));
     public static final Item RAW_CHRODOMACH = registerItem ("raw_chrodomach", new Item(new FabricItemSettings ()));
     public static final Item REFINED_CHRODOMACH = registerItem ("refined_chrodomach", new Item(new FabricItemSettings ()));
 
     public static final Item CRAB_LEGS = registerItem ("crab_legs", new Item(new FabricItemSettings().food(ModFoodComponents.CRAB_LEGS)));
-
+    public static final Item COOKED_CRAB_LEGS = registerItem ("cooked_crab_legs", new Item(new FabricItemSettings().food(ModFoodComponents.COOKED_CRAB_LEGS)));
     private static void addItemsToIngredientTabItemGroup(FabricItemGroupEntries entries) {
 
     }

@@ -2,16 +2,11 @@ package net.irrelevent.neardeadlythreat;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.irrelevent.neardeadlythreat.block.ModBlocks;
-import net.irrelevent.neardeadlythreat.effect.AquaProficientStatusEffect;
 import net.irrelevent.neardeadlythreat.effect.ModEffects;
-import net.irrelevent.neardeadlythreat.item.ModFoodComponents;
 import net.irrelevent.neardeadlythreat.item.ModItemGroups;
 import net.irrelevent.neardeadlythreat.item.ModItems;
-import net.minecraft.entity.effect.StatusEffect;
-import net.minecraft.registry.Registries;
-import net.minecraft.registry.Registry;
-import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -27,6 +22,8 @@ public class NearDeadlyThreat implements ModInitializer {
 		ModBlocks.registerModBlocks();
 
 		ModEffects.registerEffects ();
+
+		FuelRegistry.INSTANCE.add(ModItems.DOMINITE_ISOTOPE, 1200);
 
 
 

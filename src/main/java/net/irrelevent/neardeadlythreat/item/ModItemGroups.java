@@ -15,6 +15,7 @@ public class ModItemGroups {
             FabricItemGroup.builder ().displayName (Text.translatable ("itemgroup.miscll"))
                     .icon(() -> new ItemStack (ModItems.REFINED_DOMINITE)).entries ((displayContext, entries) -> {
                 entries.add(ModItems.DOMINITE);
+                entries.add(ModItems.DOMINITE_ISOTOPE);
                 entries.add(ModItems.REFINED_DOMINITE);
                 entries.add(ModItems.RAW_CHRODOMACH);
                 entries.add(ModItems.REFINED_CHRODOMACH);
@@ -24,6 +25,7 @@ public class ModItemGroups {
                 entries.add(ModBlocks.CHRODOMACH_BLOCK);
 
                 entries.add(ModItems.CRAB_LEGS);
+                entries.add(ModItems.COOKED_CRAB_LEGS);
 
 
     }).build ());
