@@ -11,7 +11,6 @@ import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.loot.LootTable;
 import net.minecraft.loot.condition.TableBonusLootCondition;
-import net.minecraft.loot.entry.AlternativeEntry;
 import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.loot.entry.LeafEntry;
 import net.minecraft.loot.entry.LootPoolEntry;
@@ -32,6 +31,15 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
     public void generate(){
         addDrop (ModBlocks.CHRODOMACH_BLOCK);
         addDrop (ModBlocks.DOMINITE_BLOCK);
+
+        addDrop (ModBlocks.YELLOW_MERANTI_LOG);
+        addDrop (ModBlocks.YELLOW_MERANTI_WOOD);
+        addDrop (ModBlocks.STRIPPED_YELLOW_MERANTI_LOG);
+        addDrop (ModBlocks.STRIPPED_YELLOW_MERANTI_WOOD);
+
+        addDrop (ModBlocks.YELLOW_MERANTI_PLANKS);
+
+        addDrop(ModBlocks.YELLOW_MERANTI_LEAVES, leavesDrops (ModBlocks.YELLOW_MERANTI_LEAVES, ModBlocks.YELLOW_MERANTI_LEAVES, 0.005f));
 
         addDrop (ModBlocks.DOMINITE_ORE, copperLikeOreDrops(ModBlocks.DOMINITE_ORE, ModItems.DOMINITE));
     }

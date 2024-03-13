@@ -24,6 +24,13 @@ public class ModItemGroups {
                 entries.add(ModBlocks.DOMINITE_BLOCK);
                 entries.add(ModBlocks.CHRODOMACH_BLOCK);
 
+                entries.add(ModBlocks.YELLOW_MERANTI_LEAVES);
+                entries.add(ModBlocks.YELLOW_MERANTI_LOG);
+                entries.add(ModBlocks.YELLOW_MERANTI_PLANKS);
+                entries.add(ModBlocks.YELLOW_MERANTI_WOOD);
+                entries.add(ModBlocks.STRIPPED_YELLOW_MERANTI_LOG);
+                entries.add(ModBlocks.STRIPPED_YELLOW_MERANTI_WOOD);
+
                 entries.add(ModItems.CRAB_LEGS);
                 entries.add(ModItems.COOKED_CRAB_LEGS);
 

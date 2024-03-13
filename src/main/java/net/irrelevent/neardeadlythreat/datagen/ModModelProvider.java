@@ -19,6 +19,12 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll (ModBlocks.DOMINITE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll (ModBlocks.CHRODOMACH_BLOCK);
 
+        blockStateModelGenerator.registerLog(ModBlocks.YELLOW_MERANTI_LOG).log(ModBlocks.YELLOW_MERANTI_LOG).wood(ModBlocks.YELLOW_MERANTI_WOOD);
+        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_YELLOW_MERANTI_LOG).log(ModBlocks.STRIPPED_YELLOW_MERANTI_LOG).wood(ModBlocks.STRIPPED_YELLOW_MERANTI_WOOD);
+        blockStateModelGenerator.registerSimpleCubeAll (ModBlocks.YELLOW_MERANTI_LEAVES);
+        blockStateModelGenerator.registerSimpleCubeAll (ModBlocks.YELLOW_MERANTI_PLANKS);
+
+
     }
 
     @Override

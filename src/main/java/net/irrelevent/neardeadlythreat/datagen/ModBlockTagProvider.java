@@ -6,6 +6,7 @@ import net.irrelevent.neardeadlythreat.block.ModBlocks;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
+import net.minecraft.registry.tag.ItemTags;
 import net.minecraft.registry.tag.TagKey;
 import net.minecraft.util.Identifier;
 
@@ -26,5 +27,11 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider{
                 .add(ModBlocks.CHRODOMACH_BLOCK)
                 .add(ModBlocks.DOMINITE_BLOCK)
                 .add(ModBlocks.DOMINITE_ORE);
+
+        getOrCreateTagBuilder (BlockTags.LOGS_THAT_BURN)
+                .add (ModBlocks.YELLOW_MERANTI_LOG)
+                .add (ModBlocks.YELLOW_MERANTI_WOOD)
+                .add (ModBlocks.STRIPPED_YELLOW_MERANTI_LOG)
+                .add (ModBlocks.STRIPPED_YELLOW_MERANTI_WOOD);
     }
 }
