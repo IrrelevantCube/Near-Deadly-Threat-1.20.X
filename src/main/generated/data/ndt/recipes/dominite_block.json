@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "d": {
+      "item": "ndt:dominite"
+    }
+  },
+  "pattern": [
+    "ddd",
+    "ddd",
+    "ddd"
+  ],
+  "result": {
+    "item": "ndt:dominite_block"
+  },
+  "show_notification": true
+}
