@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "ndt:block/yellow_meranti_log",
+    "side": "ndt:block/yellow_meranti_log"
+  }
+}

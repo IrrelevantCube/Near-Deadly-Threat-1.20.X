@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "ndt:block/yellow_meranti_log_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "ndt:block/yellow_meranti_log"
+    },
+    "axis=z": {
+      "model": "ndt:block/yellow_meranti_log_horizontal",
+      "x": 90
+    }
+  }
+}

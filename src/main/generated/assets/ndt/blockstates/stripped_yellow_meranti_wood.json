@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "ndt:block/stripped_yellow_meranti_wood",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "ndt:block/stripped_yellow_meranti_wood"
+    },
+    "axis=z": {
+      "model": "ndt:block/stripped_yellow_meranti_wood",
+      "x": 90
+    }
+  }
+}

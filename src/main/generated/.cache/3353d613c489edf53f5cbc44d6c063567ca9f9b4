@@ -1,4 +1,10 @@
-// 1.20.1	2024-03-12T19:30:18.7834865	Near Deadly Threat/Block Loot Tables
+// 1.20.1	2024-03-13T15:06:39.2882514	Near Deadly Threat/Block Loot Tables
+8dec5021b41fd8b017451665601efc290f8eea2c data\ndt\loot_tables\blocks\yellow_meranti_wood.json
+7a17159fca70188d5d389b77de7b56fcedd22c8e data\ndt\loot_tables\blocks\yellow_meranti_planks.json
+05024613ae6434744c3dcda027c9109f0b83e655 data\ndt\loot_tables\blocks\stripped_yellow_meranti_wood.json
+0b4029708951a559d0758d9175f38b601ee986ee data\ndt\loot_tables\blocks\stripped_yellow_meranti_log.json
+60a845a7bf94617cb5d5bd16f86c1ad82f3bb0de data\ndt\loot_tables\blocks\yellow_meranti_leaves.json
 f234de571d72cfa827a5a6b5bac45b6e8e0f6ca3 data\ndt\loot_tables\blocks\chrodomach_block.json
+9251401203235371cebc987e6bae27f4c93210a5 data\ndt\loot_tables\blocks\yellow_meranti_log.json
 c795f6d97d0986e8d585607092e2a035f60692a2 data\ndt\loot_tables\blocks\dominite_ore.json
 12c8d28a3a9f4c85e7359dcaec1bb1fab43d51b6 data\ndt\loot_tables\blocks\dominite_block.json

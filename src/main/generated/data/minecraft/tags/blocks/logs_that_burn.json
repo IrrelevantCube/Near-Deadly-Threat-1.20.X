@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "ndt:yellow_meranti_log",
+    "ndt:yellow_meranti_wood",
+    "ndt:stripped_yellow_meranti_log",
+    "ndt:stripped_yellow_meranti_wood"
+  ]
+}

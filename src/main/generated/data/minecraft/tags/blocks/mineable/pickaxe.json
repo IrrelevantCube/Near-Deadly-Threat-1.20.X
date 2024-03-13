@@ -3,6 +3,7 @@
   "values": [
     "ndt:dominite_block",
     "ndt:chrodomach_block",
+    "ndt:chrodomach_ore",
     "ndt:dominite_ore"
   ]
 }
