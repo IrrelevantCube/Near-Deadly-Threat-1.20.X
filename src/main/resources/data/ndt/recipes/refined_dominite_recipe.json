@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "group": "dominite",
+  "ingredient": {
+    "item": "ndt:dominite"
+  },
+  "result": "ndt:refined_dominite",
+  "experience": 7,
+  "cookingtime": 500000
+}
