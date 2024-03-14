@@ -21,7 +21,6 @@ public class ModItemGroups {
                 entries.add(ModItems.REFINED_CHRODOMACH);
 
                 entries.add(ModBlocks.DOMINITE_ORE);
-                entries.add(ModBlocks.CHRODOMACH_ORE);
                 entries.add(ModBlocks.DOMINITE_BLOCK);
                 entries.add(ModBlocks.CHRODOMACH_BLOCK);
 
