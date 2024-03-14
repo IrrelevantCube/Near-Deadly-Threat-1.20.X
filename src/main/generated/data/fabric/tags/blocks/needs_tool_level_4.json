@@ -1,9 +1,6 @@
 {
   "replace": false,
   "values": [
-    "ndt:chrodomach_block",
-    "ndt:chrodomach_ore",
-    "ndt:dominite_block",
-    "ndt:dominite_ore"
+
   ]
 }

@@ -48,6 +48,14 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input ('r', ModItems.REFINED_DOMINITE)
                 .criterion (hasItem (ModItems.REFINED_DOMINITE), conditionsFromItem (ModItems.REFINED_DOMINITE))
                 .offerTo (exporter, new Identifier (getRecipeName (ModBlocks.DOMINITE_ORE)));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.YELLOW_MERANTI_PLANKS, 4)
+                .criterion (hasItem(ModBlocks.YELLOW_MERANTI_LOG), conditionsFromItem (ModBlocks.YELLOW_MERANTI_LOG))
+                .criterion (hasItem(ModBlocks.YELLOW_MERANTI_WOOD), conditionsFromItem (ModBlocks.YELLOW_MERANTI_WOOD))
+                .criterion (hasItem(ModBlocks.STRIPPED_YELLOW_MERANTI_LOG), conditionsFromItem (ModBlocks.STRIPPED_YELLOW_MERANTI_LOG))
+                .criterion (hasItem(ModBlocks.STRIPPED_YELLOW_MERANTI_WOOD), conditionsFromItem (ModBlocks.STRIPPED_YELLOW_MERANTI_WOOD))
+                .offerTo (exporter, new Identifier (getRecipeName(ModBlocks.YELLOW_MERANTI_PLANKS)));
+
         }
 
 }

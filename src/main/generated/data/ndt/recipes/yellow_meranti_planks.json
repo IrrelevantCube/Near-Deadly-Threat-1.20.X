@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [],
+  "result": {
+    "count": 4,
+    "item": "ndt:yellow_meranti_planks"
+  }
+}

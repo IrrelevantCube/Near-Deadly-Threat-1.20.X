@@ -1,4 +1,4 @@
-// 1.20.1	2024-03-13T15:06:39.2902468	Near Deadly Threat/Model Definitions
+// 1.20.1	2024-03-14T10:03:36.0614281	Near Deadly Threat/Model Definitions
 aa287f7da5c63cd6707505449679330a83e94096 assets\ndt\models\item\dominite_ore.json
 52f48701042f2d19927ac1d6dc69a4f524c9dc82 assets\ndt\models\item\yellow_meranti_planks.json
 de29f23eb4d63b1110470290618ab8fb70826b8f assets\ndt\models\block\dominite_block.json
@@ -7,8 +7,8 @@ a3d42c1814f0879d4c1621697607a1964273134b assets\ndt\blockstates\dominite_block.j
 77faec907bf8122964552dd94bdac44647a5816a assets\ndt\blockstates\stripped_yellow_meranti_log.json
 a2f1090f6569230c5fefc29a880f715af00f370b assets\ndt\models\block\stripped_yellow_meranti_log_horizontal.json
 2b88299334d8234b8f19cacae5589266fb0f575b assets\ndt\models\item\refined_dominite.json
-9d13a318c80d959e0a1abfb6f2cc4bd5b29a1633 assets\ndt\models\item\cooked_crab_legs.json
 4f8ab5ab4bb4d41bc188189edb37eb854763fdf0 assets\ndt\models\item\dominite_isotope.json
+9d13a318c80d959e0a1abfb6f2cc4bd5b29a1633 assets\ndt\models\item\cooked_crab_legs.json
 08598b92afca1eece772f3d174f07fa73cc38148 assets\ndt\models\item\dominite_block.json
 80fa29f939c2a90b54f5dedd1550339074e9be17 assets\ndt\models\item\stripped_yellow_meranti_wood.json
 7825f559fa92c3836207fdddfdc25762b8e525ab assets\ndt\blockstates\yellow_meranti_leaves.json
