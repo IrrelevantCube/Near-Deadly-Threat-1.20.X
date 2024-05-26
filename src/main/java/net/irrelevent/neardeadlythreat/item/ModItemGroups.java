@@ -19,6 +19,7 @@ public class ModItemGroups {
                 entries.add(ModItems.REFINED_DOMINITE);
                 entries.add(ModItems.RAW_CHRODOMACH);
                 entries.add(ModItems.REFINED_CHRODOMACH);
+                entries.add(ModItems.MCLOCK);
 
                 entries.add(ModBlocks.DOMINITE_ORE);
                 entries.add(ModBlocks.DOMINITE_BLOCK);
@@ -28,6 +29,15 @@ public class ModItemGroups {
                 entries.add(ModBlocks.YELLOW_MERANTI_LOG);
                 entries.add(ModBlocks.YELLOW_MERANTI_PLANKS);
                 entries.add(ModBlocks.YELLOW_MERANTI_WOOD);
+
+                entries.add(ModBlocks.YELLOW_MERANTI_DOOR);
+                entries.add(ModBlocks.YELLOW_MERANTI_STAIRS);
+                entries.add(ModBlocks.YELLOW_MERANTI_SLAB);
+                entries.add(ModBlocks.YELLOW_MERANTI_FENCE);
+                entries.add(ModBlocks.YELLOW_MERANTI_FENCE_GATE);
+                entries.add(ModBlocks.YELLOW_MERANTI_BUTTON);
+                entries.add(ModBlocks.YELLOW_MERANTI_PRESSURE_PLATE);
+
                 entries.add(ModBlocks.STRIPPED_YELLOW_MERANTI_LOG);
                 entries.add(ModBlocks.STRIPPED_YELLOW_MERANTI_WOOD);
 

@@ -33,5 +33,11 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider{
                 .add (ModBlocks.YELLOW_MERANTI_WOOD)
                 .add (ModBlocks.STRIPPED_YELLOW_MERANTI_LOG)
                 .add (ModBlocks.STRIPPED_YELLOW_MERANTI_WOOD);
+
+        getOrCreateTagBuilder (BlockTags.FENCES)
+                .add(ModBlocks.YELLOW_MERANTI_FENCE);
+
+        getOrCreateTagBuilder (BlockTags.FENCE_GATES)
+                .add(ModBlocks.YELLOW_MERANTI_FENCE_GATE);
     }
 }

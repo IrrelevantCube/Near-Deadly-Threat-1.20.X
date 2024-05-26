@@ -22,8 +22,17 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerLog(ModBlocks.YELLOW_MERANTI_LOG).log(ModBlocks.YELLOW_MERANTI_LOG).wood(ModBlocks.YELLOW_MERANTI_WOOD);
         blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_YELLOW_MERANTI_LOG).log(ModBlocks.STRIPPED_YELLOW_MERANTI_LOG).wood(ModBlocks.STRIPPED_YELLOW_MERANTI_WOOD);
         blockStateModelGenerator.registerSimpleCubeAll (ModBlocks.YELLOW_MERANTI_LEAVES);
-        blockStateModelGenerator.registerSimpleCubeAll (ModBlocks.YELLOW_MERANTI_PLANKS);
+        BlockStateModelGenerator.BlockTexturePool yellowMerantiPool = blockStateModelGenerator.registerCubeAllModelTexturePool (ModBlocks.YELLOW_MERANTI_PLANKS);
 
+        yellowMerantiPool.stairs (ModBlocks.YELLOW_MERANTI_STAIRS);
+        yellowMerantiPool.fence (ModBlocks.YELLOW_MERANTI_FENCE);
+        yellowMerantiPool.fenceGate (ModBlocks.YELLOW_MERANTI_FENCE_GATE);
+        yellowMerantiPool.pressurePlate (ModBlocks.YELLOW_MERANTI_PRESSURE_PLATE);
+        yellowMerantiPool.slab (ModBlocks.YELLOW_MERANTI_SLAB);
+        yellowMerantiPool.button (ModBlocks.YELLOW_MERANTI_BUTTON);
+
+        blockStateModelGenerator.registerDoor (ModBlocks.YELLOW_MERANTI_DOOR);
+        blockStateModelGenerator.registerTrapdoor (ModBlocks.YELLOW_MERANTI_TRAPDOOR);
 
     }
 
@@ -34,6 +43,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register (ModItems.CRAB_LEGS, Models.GENERATED);
         itemModelGenerator.register (ModItems.COOKED_CRAB_LEGS, Models.GENERATED);
         itemModelGenerator.register (ModItems.RAW_CHRODOMACH, Models.GENERATED);
+        itemModelGenerator.register (ModItems.REFINED_CHRODOMACH, Models.GENERATED);
         itemModelGenerator.register (ModItems.DOMINITE_ISOTOPE, Models.GENERATED);
 
     }

@@ -56,6 +56,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion (hasItem(ModBlocks.STRIPPED_YELLOW_MERANTI_WOOD), conditionsFromItem (ModBlocks.STRIPPED_YELLOW_MERANTI_WOOD))
                 .offerTo (exporter, new Identifier (getRecipeName(ModBlocks.YELLOW_MERANTI_PLANKS)));
 
+
+
         }
 
 }

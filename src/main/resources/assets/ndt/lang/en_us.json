@@ -5,6 +5,8 @@
   "item.ndt.refined_chrodomach": "Refined Chrodomach",
   "item.ndt.dominite_isotope": "Dominite Isotope",
 
+  "item.ndt.modified_clock": "Modified Clock",
+
   "block.ndt.dominite_ore": "Dominite Ore",
   "block.ndt.dominite_block": "Block of Dominite",
   "block.ndt.chrodomach_block": "Block of Chrodomach",
@@ -15,6 +17,15 @@
   "block.ndt.yellow_meranti_planks": "Yellow Meranti Planks",
   "block.ndt.stripped_yellow_meranti_log": "Stripped Yellow Meranti Log",
   "block.ndt.stripped_yellow_meranti_wood": "Stripped Yellow Meranti Wood",
+
+  "block.ndt.yellow_meranti_stairs": "Yellow Meranti Stairs",
+  "block.ndt.yellow_meranti_slab": "Yellow Meranti Slab",
+  "block.ndt.yellow_meranti_Button": "Yellow Meranti Button",
+  "block.ndt.yellow_meranti_pressure_plate": "Yellow Meranti Pressure Plate",
+  "block.ndt.yellow_meranti_fence": "Yellow Meranti Fence",
+  "block.ndt.yellow_meranti_fence_gate": "Yellow Meranti Fence Gate",
+  "block.ndt.yellow_meranti_door": "Yellow Meranti Door",
+  "block.ndt.yellow_meranti_trapdoor": "Yellow Meranti Trapdoor",
 
   "itemgroup.miscll": "Miscll.",
 

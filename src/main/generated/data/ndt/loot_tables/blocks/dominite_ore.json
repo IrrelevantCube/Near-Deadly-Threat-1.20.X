@@ -62,15 +62,68 @@
               "chance": 0.5
             },
             {
-              "condition": "minecraft:weather_check",
-              "raining": true,
-              "thundering": true
-            },
-            {
               "condition": "minecraft:time_check",
               "value": {
                 "min": 13702,
                 "max": 22300
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "ndt:raw_chrodomach",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 2,
+              "add": false
+            },
+            {
+              "function": "minecraft:apply_bonus",
+              "enchantment": "minecraft:fortune",
+              "formula": "minecraft:ore_drops"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.05
+            },
+            {
+              "condition": "minecraft:time_check",
+              "value": {
+                "min": 12000,
+                "max": 13702
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "ndt:raw_chrodomach",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 2,
+              "add": false
+            },
+            {
+              "function": "minecraft:apply_bonus",
+              "enchantment": "minecraft:fortune",
+              "formula": "minecraft:ore_drops"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.005
+            },
+            {
+              "condition": "minecraft:time_check",
+              "value": {
+                "min": 0,
+                "max": 12000
               }
             }
           ]

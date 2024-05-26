@@ -33,6 +33,26 @@ public class ModBlocks {
             new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_JUNGLE_WOOD).strength(7f).pistonBehavior (PistonBehavior.BLOCK).sounds (BlockSoundGroup.WOOD).burnable ()));
     public static final Block CHRODOMACH_BLOCK = registerBlock ("chrodomach_block",
             new Block(FabricBlockSettings.copyOf(Blocks.NETHERITE_BLOCK).instrument(Instrument.CHIME).luminance (12).sounds (BlockSoundGroup.ANVIL)));
+
+    public static final Block YELLOW_MERANTI_STAIRS = registerBlock ("yellow_meranti_stairs",
+            new StairsBlock(ModBlocks.YELLOW_MERANTI_PLANKS.getDefaultState (), (FabricBlockSettings.copyOf(Blocks.JUNGLE_PLANKS).strength(7f).pistonBehavior (PistonBehavior.BLOCK).sounds (BlockSoundGroup.WOOD).burnable ())));
+    public static final Block YELLOW_MERANTI_SLAB = registerBlock ("yellow_meranti_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.JUNGLE_PLANKS).strength(7f).pistonBehavior (PistonBehavior.BLOCK).sounds (BlockSoundGroup.WOOD).burnable ()));
+
+    public static final Block YELLOW_MERANTI_BUTTON = registerBlock ("yellow_meranti_button",
+            new ButtonBlock(FabricBlockSettings.copyOf(Blocks.JUNGLE_PLANKS).strength(7f).pistonBehavior (PistonBehavior.BLOCK).sounds (BlockSoundGroup.WOOD).burnable (), BlockSetType.JUNGLE, 20, true));
+    public static final Block YELLOW_MERANTI_PRESSURE_PLATE = registerBlock ("yellow_meranti_pressure_plate",
+            new PressurePlateBlock (PressurePlateBlock.ActivationRule.EVERYTHING,FabricBlockSettings.copyOf(Blocks.JUNGLE_PLANKS).strength(7f).pistonBehavior (PistonBehavior.BLOCK).sounds (BlockSoundGroup.WOOD).burnable (), BlockSetType.JUNGLE));
+
+    public static final Block YELLOW_MERANTI_FENCE = registerBlock ("yellow_meranti_fence",
+            new FenceBlock(FabricBlockSettings.copyOf(Blocks.JUNGLE_PLANKS).strength(7f).pistonBehavior (PistonBehavior.BLOCK).sounds (BlockSoundGroup.WOOD).burnable ()));
+    public static final Block YELLOW_MERANTI_FENCE_GATE = registerBlock ("yellow_meranti_fence_gate",
+            new FenceGateBlock(FabricBlockSettings.copyOf(Blocks.JUNGLE_PLANKS).strength(7f).pistonBehavior (PistonBehavior.BLOCK).sounds (BlockSoundGroup.WOOD).burnable (), WoodType.JUNGLE));
+
+    public static final Block YELLOW_MERANTI_DOOR = registerBlock ("yellow_meranti_door",
+            new DoorBlock(FabricBlockSettings.copyOf(Blocks.JUNGLE_DOOR).strength(7f).pistonBehavior (PistonBehavior.BLOCK).sounds (BlockSoundGroup.WOOD).burnable (), BlockSetType.JUNGLE));
+    public static final Block YELLOW_MERANTI_TRAPDOOR = registerBlock ("yellow_meranti_trapdoor",
+            new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.JUNGLE_TRAPDOOR).strength(7f).pistonBehavior (PistonBehavior.BLOCK).sounds (BlockSoundGroup.WOOD).burnable (), BlockSetType.JUNGLE));
     private static Block registerBlock(String name, Block block) {
         registerBlockItem (name, block);
         return Registry.register (Registries.BLOCK, new Identifier (NearDeadlyThreat.MOD_ID, name), block);
