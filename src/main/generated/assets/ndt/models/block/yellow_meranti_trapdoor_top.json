@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_trapdoor_top",
+  "textures": {
+    "texture": "ndt:block/yellow_meranti_trapdoor"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top_right_open",
+  "textures": {
+    "bottom": "ndt:block/yellow_meranti_door_bottom",
+    "top": "ndt:block/yellow_meranti_door_top"
+  }
+}

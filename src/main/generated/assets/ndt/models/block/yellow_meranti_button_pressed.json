@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button_pressed",
+  "textures": {
+    "texture": "ndt:block/yellow_meranti_planks"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "ndt:block/yellow_meranti_slab"
+    },
+    "type=double": {
+      "model": "ndt:block/yellow_meranti_planks"
+    },
+    "type=top": {
+      "model": "ndt:block/yellow_meranti_slab_top"
+    }
+  }
+}

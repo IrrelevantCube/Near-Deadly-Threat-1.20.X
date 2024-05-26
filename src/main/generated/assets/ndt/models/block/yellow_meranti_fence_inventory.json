@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/fence_inventory",
+  "textures": {
+    "texture": "ndt:block/yellow_meranti_planks"
+  }
+}
