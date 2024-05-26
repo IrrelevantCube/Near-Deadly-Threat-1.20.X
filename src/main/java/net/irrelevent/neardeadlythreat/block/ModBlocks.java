@@ -17,6 +17,8 @@ import net.minecraft.util.math.intprovider.UniformIntProvider;
 public class ModBlocks {
     public static final Block DOMINITE_ORE = registerBlock ("dominite_ore",
             new ExperienceDroppingBlock (FabricBlockSettings.copyOf(Blocks.ANCIENT_DEBRIS).strength (3.5f, 2000).instrument(Instrument.CHIME).sounds(BlockSoundGroup.AMETHYST_BLOCK), UniformIntProvider.create (5, 8)));
+    public static final Block CHRODOMACH_ORE = registerBlock ("chrodomach_ore",
+            new ExperienceDroppingBlock (FabricBlockSettings.copyOf(Blocks.ANCIENT_DEBRIS).strength (5.5f, 30000).instrument(Instrument.IRON_XYLOPHONE).sounds(BlockSoundGroup.AMETHYST_BLOCK), UniformIntProvider.create (8, 12)));
     public static final Block DOMINITE_BLOCK = registerBlock ("dominite_block",
             new Block(FabricBlockSettings.copyOf(Blocks.GOLD_BLOCK).instrument(Instrument.CHIME).sounds (BlockSoundGroup.AMETHYST_BLOCK)));
     public static final Block YELLOW_MERANTI_PLANKS = registerBlock ("yellow_meranti_planks",

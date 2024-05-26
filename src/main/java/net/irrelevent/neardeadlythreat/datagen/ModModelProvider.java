@@ -16,6 +16,7 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         blockStateModelGenerator.registerSimpleCubeAll (ModBlocks.DOMINITE_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll (ModBlocks.CHRODOMACH_ORE);
         blockStateModelGenerator.registerSimpleCubeAll (ModBlocks.DOMINITE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll (ModBlocks.CHRODOMACH_BLOCK);
 

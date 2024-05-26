@@ -22,11 +22,13 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider{
         getOrCreateTagBuilder (BlockTags.PICKAXE_MINEABLE)
                 .add (ModBlocks.DOMINITE_BLOCK)
                 .add (ModBlocks.CHRODOMACH_BLOCK)
-                .add (ModBlocks.DOMINITE_ORE);
+                .add (ModBlocks.DOMINITE_ORE)
+                .add (ModBlocks.CHRODOMACH_ORE);
         getOrCreateTagBuilder (TagKey.of (RegistryKeys.BLOCK, new Identifier ("fabric", "needs_tool_level_4")))
                 .add(ModBlocks.CHRODOMACH_BLOCK)
                 .add(ModBlocks.DOMINITE_BLOCK)
-                .add(ModBlocks.DOMINITE_ORE);
+                .add(ModBlocks.DOMINITE_ORE)
+                .add(ModBlocks.CHRODOMACH_ORE);
 
         getOrCreateTagBuilder (BlockTags.LOGS_THAT_BURN)
                 .add (ModBlocks.YELLOW_MERANTI_LOG)

@@ -53,6 +53,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.YELLOW_MERANTI_LEAVES, leavesDrops (ModBlocks.YELLOW_MERANTI_LEAVES, ModBlocks.YELLOW_MERANTI_LEAVES, 0.005f));
 
         addDrop (ModBlocks.DOMINITE_ORE, copperLikeOreDrops(ModBlocks.DOMINITE_ORE, ModItems.DOMINITE));
+        addDrop (ModBlocks.CHRODOMACH_ORE, copperLikeOreDrops(ModBlocks.CHRODOMACH_ORE, ModItems.RAW_CHRODOMACH));
     }
 
     public LootTable.Builder copperLikeOreDrops(Block drop, Item item, float ... chance) {

@@ -6,9 +6,11 @@ import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.irrelevent.neardeadlythreat.block.ModBlocks;
+import net.irrelevent.neardeadlythreat.datagen.ModWorldGenerator;
 import net.irrelevent.neardeadlythreat.effect.ModEffects;
 import net.irrelevent.neardeadlythreat.item.ModItemGroups;
 import net.irrelevent.neardeadlythreat.item.ModItems;
+import net.irrelevent.neardeadlythreat.world.gen.ModWorldGeneration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -36,6 +38,8 @@ public class NearDeadlyThreat implements ModInitializer {
 		FlammableBlockRegistry.getDefaultInstance ().add(ModBlocks.STRIPPED_YELLOW_MERANTI_LOG, 10, 25);
 		FlammableBlockRegistry.getDefaultInstance ().add(ModBlocks.STRIPPED_YELLOW_MERANTI_WOOD, 10, 15);
 		FlammableBlockRegistry.getDefaultInstance ().add(ModBlocks.YELLOW_MERANTI_PLANKS, 10, 25);
+
+		ModWorldGeneration.generatedModWorldGen ();
 
 		LOGGER.info("Hello Fabric world!");
 	}
