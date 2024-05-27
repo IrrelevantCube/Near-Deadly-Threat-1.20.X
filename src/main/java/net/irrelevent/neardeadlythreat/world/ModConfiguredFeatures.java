@@ -9,16 +9,23 @@ import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.structure.rule.RuleTest;
 import net.minecraft.structure.rule.TagMatchRuleTest;
 import net.minecraft.util.Identifier;
-import net.minecraft.world.gen.feature.ConfiguredFeature;
-import net.minecraft.world.gen.feature.Feature;
-import net.minecraft.world.gen.feature.FeatureConfig;
-import net.minecraft.world.gen.feature.OreFeatureConfig;
+import net.minecraft.util.math.intprovider.ConstantIntProvider;
+import net.minecraft.world.gen.feature.*;
+import net.minecraft.world.gen.feature.size.ThreeLayersFeatureSize;
+import net.minecraft.world.gen.foliage.BlobFoliagePlacer;
+import net.minecraft.world.gen.stateprovider.BlockStateProvider;
+import net.minecraft.world.gen.trunk.GiantTrunkPlacer;
+
 
 import java.util.List;
+import java.util.OptionalInt;
 
 public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> DOMINITE_ORE_KEY = registryKey ("dominite_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> CHRODOMACH_ORE_KEY = registryKey ("chrodomach_ore");
+
+
+    public static final RegistryKey<ConfiguredFeature<?, ?>> YELLOW_MERANTI_KEY = registryKey("yellow_meranti_key");
 
 
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
@@ -35,6 +42,14 @@ public class ModConfiguredFeatures {
 
         register (context, DOMINITE_ORE_KEY, Feature.ORE, new OreFeatureConfig (overworldDominiteOres, 3));
         register (context, CHRODOMACH_ORE_KEY, Feature.ORE, new OreFeatureConfig (overworldDominiteOres, 1));
+
+        register (context, YELLOW_MERANTI_KEY, Feature.TREE, new TreeFeatureConfig.Builder (
+                BlockStateProvider.of (ModBlocks.YELLOW_MERANTI_LOG),
+                new GiantTrunkPlacer (5, 4, 3),
+                BlockStateProvider.of (ModBlocks.YELLOW_MERANTI_LEAVES),
+                new BlobFoliagePlacer (ConstantIntProvider.create(6), ConstantIntProvider.create (4), 3),
+                new ThreeLayersFeatureSize (2, 0, 3, 3, 6, OptionalInt.of (3))).build ());
+
     }
 
 

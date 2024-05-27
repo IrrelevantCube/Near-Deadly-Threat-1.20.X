@@ -30,6 +30,7 @@ public class ModItemGroups {
                 entries.add(ModBlocks.YELLOW_MERANTI_LOG);
                 entries.add(ModBlocks.YELLOW_MERANTI_PLANKS);
                 entries.add(ModBlocks.YELLOW_MERANTI_WOOD);
+                entries.add(ModBlocks.YELLOW_MERANTI_SAPLING);
 
                 entries.add(ModBlocks.YELLOW_MERANTI_DOOR);
                 entries.add(ModBlocks.YELLOW_MERANTI_STAIRS);

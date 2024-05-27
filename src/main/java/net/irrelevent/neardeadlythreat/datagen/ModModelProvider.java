@@ -23,6 +23,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerLog(ModBlocks.YELLOW_MERANTI_LOG).log(ModBlocks.YELLOW_MERANTI_LOG).wood(ModBlocks.YELLOW_MERANTI_WOOD);
         blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_YELLOW_MERANTI_LOG).log(ModBlocks.STRIPPED_YELLOW_MERANTI_LOG).wood(ModBlocks.STRIPPED_YELLOW_MERANTI_WOOD);
         blockStateModelGenerator.registerSimpleCubeAll (ModBlocks.YELLOW_MERANTI_LEAVES);
+        blockStateModelGenerator.registerTintableCross (ModBlocks.YELLOW_MERANTI_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
         BlockStateModelGenerator.BlockTexturePool yellowMerantiPool = blockStateModelGenerator.registerCubeAllModelTexturePool (ModBlocks.YELLOW_MERANTI_PLANKS);
 
         yellowMerantiPool.stairs (ModBlocks.YELLOW_MERANTI_STAIRS);

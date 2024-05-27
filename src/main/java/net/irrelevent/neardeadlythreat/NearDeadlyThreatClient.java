@@ -13,5 +13,7 @@ public class NearDeadlyThreatClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock (ModBlocks.YELLOW_MERANTI_DOOR, RenderLayer.getCutout ());
         BlockRenderLayerMap.INSTANCE.putBlock (ModBlocks.YELLOW_MERANTI_TRAPDOOR, RenderLayer.getCutout ());
 
+        BlockRenderLayerMap.INSTANCE.putBlock (ModBlocks.YELLOW_MERANTI_SAPLING, RenderLayer.getCutout ());
+
     }
 }
