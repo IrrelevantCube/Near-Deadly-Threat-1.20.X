@@ -3,6 +3,7 @@ package net.irrelevent.neardeadlythreat.block;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.irrelevent.neardeadlythreat.NearDeadlyThreat;
+import net.irrelevent.neardeadlythreat.world.tree.FracturedYellowMerantiSaplingGenerator;
 import net.irrelevent.neardeadlythreat.world.tree.YellowMerantiSaplingGenerator;
 import net.minecraft.block.*;
 import net.minecraft.block.enums.Instrument;
@@ -25,7 +26,7 @@ public class ModBlocks {
     public static final Block YELLOW_MERANTI_PLANKS = registerBlock ("yellow_meranti_planks",
             new Block(FabricBlockSettings.copyOf(Blocks.JUNGLE_PLANKS).strength(7f).pistonBehavior (PistonBehavior.BLOCK).sounds (BlockSoundGroup.WOOD).burnable ()));
     public static final Block YELLOW_MERANTI_LEAVES = registerBlock ("yellow_meranti_leaves",
-            new LeavesBlock (FabricBlockSettings.copyOf(Blocks.JUNGLE_LEAVES).strength(1f).pistonBehavior (PistonBehavior.DESTROY).sounds (BlockSoundGroup.CHERRY_LEAVES).burnable ().nonOpaque ()));
+            new LeavesBlock (FabricBlockSettings.copyOf(Blocks.JUNGLE_LEAVES).strength(1f).nonOpaque ()));
     public static final Block YELLOW_MERANTI_LOG = registerBlock ("yellow_meranti_log",
             new PillarBlock (FabricBlockSettings.copyOf(Blocks.JUNGLE_LOG).strength(7f).pistonBehavior (PistonBehavior.BLOCK).sounds (BlockSoundGroup.WOOD).burnable ()));
     public static final Block YELLOW_MERANTI_WOOD = registerBlock ("yellow_meranti_wood",
@@ -54,12 +55,13 @@ public class ModBlocks {
 
     public static final Block YELLOW_MERANTI_DOOR = registerBlock ("yellow_meranti_door",
             new DoorBlock(FabricBlockSettings.copyOf(Blocks.JUNGLE_DOOR).strength(7f).pistonBehavior (PistonBehavior.BLOCK).sounds (BlockSoundGroup.WOOD).burnable (), BlockSetType.JUNGLE));
-    public static final Block YELLOW_MERANTI_TRAPDOOR = registerBlock ("yellow_meranti_trapdoor",
-            new SaplingBlock(new YellowMerantiSaplingGenerator(), FabricBlockSettings.copyOf (Blocks.JUNGLE_SAPLING)));
-
-
     public static final Block YELLOW_MERANTI_SAPLING = registerBlock ("yellow_meranti_sapling",
-            new Block(FabricBlockSettings.copyOf(Blocks.JUNGLE_PLANKS).strength(7f).pistonBehavior (PistonBehavior.BLOCK).sounds (BlockSoundGroup.WOOD).burnable ()));
+            new SaplingBlock(new YellowMerantiSaplingGenerator(), FabricBlockSettings.copyOf (Blocks.JUNGLE_SAPLING)));
+    public static final Block FRACTURED_YELLOW_MERANTI_SAPLING = registerBlock ("fractured_yellow_meranti_sapling",
+            new SaplingBlock(new FracturedYellowMerantiSaplingGenerator (), FabricBlockSettings.copyOf (Blocks.JUNGLE_SAPLING)));
+
+    public static final Block YELLOW_MERANTI_TRAPDOOR = registerBlock ("yellow_meranti_trapdoor",
+            new Block(FabricBlockSettings.copyOf(Blocks.JUNGLE_PLANKS).strength(7f).sounds (BlockSoundGroup.WOOD).nonOpaque().burnable ()));
     private static Block registerBlock(String name, Block block) {
         registerBlockItem (name, block);
         return Registry.register (Registries.BLOCK, new Identifier (NearDeadlyThreat.MOD_ID, name), block);

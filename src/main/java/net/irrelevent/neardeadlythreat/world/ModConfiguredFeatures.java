@@ -2,6 +2,7 @@ package net.irrelevent.neardeadlythreat.world;
 
 import net.irrelevent.neardeadlythreat.NearDeadlyThreat;
 import net.irrelevent.neardeadlythreat.block.ModBlocks;
+import net.irrelevent.neardeadlythreat.world.tree.custom.YellowMerantiTrunkPlacer;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
@@ -9,12 +10,16 @@ import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.structure.rule.RuleTest;
 import net.minecraft.structure.rule.TagMatchRuleTest;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.collection.DataPool;
 import net.minecraft.util.math.intprovider.ConstantIntProvider;
+import net.minecraft.util.math.intprovider.IntProvider;
+import net.minecraft.util.math.intprovider.UniformIntProvider;
+import net.minecraft.util.math.intprovider.WeightedListIntProvider;
 import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.feature.size.ThreeLayersFeatureSize;
 import net.minecraft.world.gen.foliage.BlobFoliagePlacer;
 import net.minecraft.world.gen.stateprovider.BlockStateProvider;
-import net.minecraft.world.gen.trunk.GiantTrunkPlacer;
+
 
 
 import java.util.List;
@@ -25,8 +30,8 @@ public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> CHRODOMACH_ORE_KEY = registryKey ("chrodomach_ore");
 
 
-    public static final RegistryKey<ConfiguredFeature<?, ?>> YELLOW_MERANTI_KEY = registryKey("yellow_meranti_key");
-
+    public static final RegistryKey<ConfiguredFeature<?, ?>> YELLOW_MERANTI_KEY = registryKey("yellow_meranti");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> FRACTURED_YELLOW_MERANTI_KEY = registryKey("fractured_yellow_meranti");
 
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
         RuleTest stoneReplacables = new TagMatchRuleTest (BlockTags.STONE_ORE_REPLACEABLES);
@@ -41,14 +46,20 @@ public class ModConfiguredFeatures {
 
 
         register (context, DOMINITE_ORE_KEY, Feature.ORE, new OreFeatureConfig (overworldDominiteOres, 3));
-        register (context, CHRODOMACH_ORE_KEY, Feature.ORE, new OreFeatureConfig (overworldDominiteOres, 1));
+        register (context, CHRODOMACH_ORE_KEY, Feature.ORE, new OreFeatureConfig (overworldChrodomachOres, 1));
 
         register (context, YELLOW_MERANTI_KEY, Feature.TREE, new TreeFeatureConfig.Builder (
                 BlockStateProvider.of (ModBlocks.YELLOW_MERANTI_LOG),
-                new GiantTrunkPlacer (5, 4, 3),
+                new YellowMerantiTrunkPlacer (12, 13, 14),
                 BlockStateProvider.of (ModBlocks.YELLOW_MERANTI_LEAVES),
                 new BlobFoliagePlacer (ConstantIntProvider.create(6), ConstantIntProvider.create (4), 3),
-                new ThreeLayersFeatureSize (2, 0, 3, 3, 6, OptionalInt.of (3))).build ());
+                new ThreeLayersFeatureSize (2, 3, 3, 3, 3, OptionalInt.of (3))).build ());
+        register (context, FRACTURED_YELLOW_MERANTI_KEY, Feature.TREE, new TreeFeatureConfig.Builder (
+                BlockStateProvider.of (ModBlocks.YELLOW_MERANTI_LOG),
+                new YellowMerantiTrunkPlacer (5, 4, 3),
+                BlockStateProvider.of (ModBlocks.YELLOW_MERANTI_LEAVES),
+                new BlobFoliagePlacer (ConstantIntProvider.create(6), ConstantIntProvider.create (4), 3),
+                new ThreeLayersFeatureSize (2, 3, 3, 3, 6, OptionalInt.of (3))).build ());
 
     }
 

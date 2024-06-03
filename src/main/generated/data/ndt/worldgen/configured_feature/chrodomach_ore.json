@@ -6,7 +6,7 @@
     "targets": [
       {
         "state": {
-          "Name": "ndt:dominite_ore"
+          "Name": "ndt:chrodomach_ore"
         },
         "target": {
           "predicate_type": "minecraft:tag_match",
@@ -15,7 +15,7 @@
       },
       {
         "state": {
-          "Name": "ndt:dominite_ore"
+          "Name": "ndt:chrodomach_ore"
         },
         "target": {
           "predicate_type": "minecraft:tag_match",

@@ -11,6 +11,8 @@ import net.irrelevent.neardeadlythreat.effect.ModEffects;
 import net.irrelevent.neardeadlythreat.item.ModItemGroups;
 import net.irrelevent.neardeadlythreat.item.ModItems;
 import net.irrelevent.neardeadlythreat.world.gen.ModWorldGeneration;
+import net.irrelevent.neardeadlythreat.world.tree.ModTrunkPlacerTypes;
+import net.irrelevent.neardeadlythreat.world.tree.custom.YellowMerantiTrunkPlacer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -38,6 +40,8 @@ public class NearDeadlyThreat implements ModInitializer {
 		FlammableBlockRegistry.getDefaultInstance ().add(ModBlocks.STRIPPED_YELLOW_MERANTI_LOG, 10, 25);
 		FlammableBlockRegistry.getDefaultInstance ().add(ModBlocks.STRIPPED_YELLOW_MERANTI_WOOD, 10, 15);
 		FlammableBlockRegistry.getDefaultInstance ().add(ModBlocks.YELLOW_MERANTI_PLANKS, 10, 25);
+
+		ModTrunkPlacerTypes.register ();
 
 		ModWorldGeneration.generatedModWorldGen ();
 
