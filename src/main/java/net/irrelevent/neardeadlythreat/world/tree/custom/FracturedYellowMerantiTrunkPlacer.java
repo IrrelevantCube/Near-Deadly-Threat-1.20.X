@@ -52,7 +52,7 @@ public class FracturedYellowMerantiTrunkPlacer extends TrunkPlacer {
         boolean bl = (true);
         boolean bl3 = bl2 = k >= 2;
         int l = bl ? height : (bl2 ? Math.max (i, j) + 1 : i + 1);
-        for (int m = 0; m < l; ++m) {
+        for (int m = random (1, 9); m < l; ++m) {
             this.getAndSetState (world, replacer, random, startPos.up (m), config);
         }
         ArrayList<FoliagePlacer.TreeNode> list = new ArrayList<FoliagePlacer.TreeNode> ();

@@ -29,12 +29,12 @@
     "ignore_vines": false,
     "minimum_size": {
       "type": "minecraft:three_layers_feature_size",
-      "limit": 2,
-      "lower_size": 3,
-      "middle_size": 3,
-      "min_clipped_height": 3,
-      "upper_limit": 3,
-      "upper_size": 3
+      "limit": 1,
+      "lower_size": 2,
+      "middle_size": 1,
+      "min_clipped_height": 1,
+      "upper_limit": 2,
+      "upper_size": 2
     },
     "trunk_placer": {
       "type": "minecraft:yellow_meranti_trunk_placer",
