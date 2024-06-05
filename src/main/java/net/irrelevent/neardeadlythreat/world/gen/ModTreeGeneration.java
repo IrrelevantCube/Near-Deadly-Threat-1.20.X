@@ -9,7 +9,8 @@ import net.minecraft.world.gen.GenerationStep;
 
 public class ModTreeGeneration {
     public static void generateTrees() {
-        BiomeModifications.addFeature (BiomeSelectors.includeByKey(ModBiomes.YELLOW_MERANTI_FOREST),
+        BiomeModifications.addFeature (BiomeSelectors.includeByKey (ModBiomes.YELLOW_MERANTI_FOREST),
                 GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.YELLOW_MERANTI_PLACED_KEY);
     }
+
 }

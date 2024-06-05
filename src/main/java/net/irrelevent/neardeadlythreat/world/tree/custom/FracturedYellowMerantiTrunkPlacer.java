@@ -83,7 +83,7 @@ public class FracturedYellowMerantiTrunkPlacer extends TrunkPlacer {
     }
 
     private int random(int i, int i1) {
-        return random(1, 3);
+        return random(1, 4);
     }
 
 

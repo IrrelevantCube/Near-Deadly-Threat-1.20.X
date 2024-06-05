@@ -6,7 +6,11 @@ import net.irrelevent.neardeadlythreat.block.ModBlocks;
 import net.irrelevent.neardeadlythreat.item.ModItems;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
+import net.minecraft.data.client.Model;
 import net.minecraft.data.client.Models;
+import net.minecraft.util.Identifier;
+
+import java.util.Optional;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
@@ -48,6 +52,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register (ModItems.RAW_CHRODOMACH, Models.GENERATED);
         itemModelGenerator.register (ModItems.REFINED_CHRODOMACH, Models.GENERATED);
         itemModelGenerator.register (ModItems.DOMINITE_ISOTOPE, Models.GENERATED);
+        itemModelGenerator.register (ModItems.BRACHYTUS_SPAWN_EGG, new Model (Optional.of (new Identifier ("item/template_spawn_egg")), Optional.empty ()));
 
     }
 }

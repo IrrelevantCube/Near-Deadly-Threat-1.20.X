@@ -21,6 +21,8 @@ public class ModItemGroups {
                 entries.add(ModItems.REFINED_CHRODOMACH);
                 entries.add(ModItems.MCLOCK);
 
+                entries.add(ModItems.BRACHYTUS_SPAWN_EGG);
+
                 entries.add(ModBlocks.DOMINITE_ORE);
                 entries.add(ModBlocks.CHRODOMACH_ORE);
                 entries.add(ModBlocks.DOMINITE_BLOCK);

@@ -1,5 +1,7 @@
-// 1.20.1	2024-06-03T17:09:46.9141835	Near Deadly Threat/World Gen
+// 1.20.1	2024-06-05T16:50:19.0022693	Near Deadly Threat/World Gen
+eaffaef562497c8228fc88a626e5ce68433db31d data\ndt\worldgen\configured_feature\giant_yellow_meranti.json
 1c38ca8dcd4a67ae7ecfca5d38dd9abf2245e502 data\ndt\worldgen\placed_feature\yellow_meranti_placed.json
+8ae9ba55521cb157924b60bfc10b875a5b27ad30 data\ndt\worldgen\placed_feature\giant_yellow_meranti_placed.json
 3a146189850d36a9fbf70cf1f6c8427909ddc789 data\ndt\worldgen\configured_feature\yellow_meranti.json
 e74065da23a5ed7ac1123684ccd9513a4a6561da data\ndt\worldgen\placed_feature\chrodomach_ore_placed.json
 dde3b37412c5344687b55593c635f5fd78598c3c data\ndt\worldgen\configured_feature\chrodomach_ore.json

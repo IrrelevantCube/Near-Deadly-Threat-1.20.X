@@ -19,7 +19,7 @@ import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.feature.size.ThreeLayersFeatureSize;
 import net.minecraft.world.gen.foliage.BlobFoliagePlacer;
 import net.minecraft.world.gen.stateprovider.BlockStateProvider;
-
+import net.minecraft.world.gen.trunk.GiantTrunkPlacer;
 
 
 import java.util.List;
@@ -60,8 +60,7 @@ public class ModConfiguredFeatures {
                 BlockStateProvider.of (ModBlocks.YELLOW_MERANTI_LEAVES),
                 new BlobFoliagePlacer (ConstantIntProvider.create(6), ConstantIntProvider.create (4), 3),
                 new ThreeLayersFeatureSize (2, 3, 3, 3, 6, OptionalInt.of (3))).build ());
-
-    }
+      }
 
 
     public static RegistryKey<ConfiguredFeature<?, ?>> registryKey(String name) {

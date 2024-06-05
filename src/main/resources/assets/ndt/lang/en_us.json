@@ -5,9 +5,12 @@
   "item.ndt.refined_chrodomach": "Refined Chrodomach",
   "item.ndt.dominite_isotope": "Dominite Isotope",
 
+  "item.ndt.brachytus_spawn_egg": "Brachytus Spawn Egg",
+
   "item.ndt.modified_clock": "Modified Clock",
 
   "block.ndt.dominite_ore": "Dominite Ore",
+  "block.ndt.chrodomach_ore": "Chrodomach Ore",
   "block.ndt.dominite_block": "Block of Dominite",
   "block.ndt.chrodomach_block": "Block of Chrodomach",
 
