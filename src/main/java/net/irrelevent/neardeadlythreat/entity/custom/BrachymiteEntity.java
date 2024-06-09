@@ -95,7 +95,7 @@ public class BrachymiteEntity extends AnimalEntity implements Ownable{
         return MobEntity.createMobAttributes ()
                 .add (EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.7)
                 .add (EntityAttributes.GENERIC_FOLLOW_RANGE, 25.0)
-                .add (EntityAttributes.GENERIC_MAX_HEALTH, 2.5)
+                .add (EntityAttributes.GENERIC_MAX_HEALTH, 0.5)
                 .add (EntityAttributes.GENERIC_ATTACK_DAMAGE, 1.0);
 
     }

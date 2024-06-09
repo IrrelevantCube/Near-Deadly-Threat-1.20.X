@@ -45,6 +45,8 @@ public class ModBlocks {
 
     public static final Block YELLOW_MERANTI_BUTTON = registerBlock ("yellow_meranti_button",
             new ButtonBlock(FabricBlockSettings.copyOf(Blocks.JUNGLE_PLANKS).strength(7f).pistonBehavior (PistonBehavior.BLOCK).sounds (BlockSoundGroup.WOOD).burnable (), BlockSetType.JUNGLE, 20, true));
+    public static final SandBlock TRIDYMITE = (SandBlock) registerBlock ("tridymite",
+            new SandBlock(14406560, FabricBlockSettings.create().mapColor(MapColor.PALE_YELLOW).instrument(Instrument.SNARE).strength(0.5f).sounds(BlockSoundGroup.SAND)));
     public static final Block YELLOW_MERANTI_PRESSURE_PLATE = registerBlock ("yellow_meranti_pressure_plate",
             new PressurePlateBlock (PressurePlateBlock.ActivationRule.EVERYTHING,FabricBlockSettings.copyOf(Blocks.JUNGLE_PLANKS).strength(7f).pistonBehavior (PistonBehavior.BLOCK).sounds (BlockSoundGroup.WOOD).burnable (), BlockSetType.JUNGLE));
 

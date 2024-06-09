@@ -25,6 +25,7 @@ public class ModItemGroups {
                 entries.add(ModItems.BRACHYMITE_SPAWN_EGG);
 
                 entries.add(ModBlocks.DOMINITE_ORE);
+                entries.add(ModBlocks.TRIDYMITE);
                 entries.add(ModBlocks.CHRODOMACH_ORE);
                 entries.add(ModBlocks.DOMINITE_BLOCK);
                 entries.add(ModBlocks.CHRODOMACH_BLOCK);
@@ -49,6 +50,7 @@ public class ModItemGroups {
 
                 entries.add(ModItems.CRAB_LEGS);
                 entries.add(ModItems.COOKED_CRAB_LEGS);
+                entries.add(ModItems.TRIDYMITE_DUST);
 
 
     }).build ());

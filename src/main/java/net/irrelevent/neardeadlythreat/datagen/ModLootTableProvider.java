@@ -57,6 +57,8 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
         addDrop (ModBlocks.DOMINITE_ORE, copperLikeOreDrops(ModBlocks.DOMINITE_ORE, ModItems.DOMINITE));
         addDrop (ModBlocks.CHRODOMACH_ORE, copperLikeOreDrops(ModBlocks.CHRODOMACH_ORE, ModItems.RAW_CHRODOMACH));
+
+        addDrop (ModBlocks.TRIDYMITE, copperLikeOreDrops (ModBlocks.TRIDYMITE, ModItems.TRIDYMITE_DUST));
     }
 
     public LootTable.Builder copperLikeOreDrops(Block drop, Item item, float ... chance) {

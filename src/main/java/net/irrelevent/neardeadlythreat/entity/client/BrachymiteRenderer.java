@@ -12,7 +12,7 @@ public class BrachymiteRenderer extends MobEntityRenderer <BrachymiteEntity, Bra
 
     private static final Identifier TEXTURE = new Identifier (NearDeadlyThreat.MOD_ID, "textures/entity/vengeancejr.png");
     public BrachymiteRenderer(EntityRendererFactory.Context context) {
-        super (context, new BrachymiteModel<> (context.getPart (ModModelLayers.BRACHYMITE)), 2.5f);
+        super (context, new BrachymiteModel<> (context.getPart (ModModelLayers.BRACHYMITE)), 0.5f);
     }
 
     @Override

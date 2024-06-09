@@ -18,6 +18,7 @@ public class ModItems {
     public static final Item DOMINITE_ISOTOPE = registerItem ("dominite_isotope", new Item(new FabricItemSettings()));
     public static final Item RAW_CHRODOMACH = registerItem ("raw_chrodomach", new Item(new FabricItemSettings ()));
     public static final Item REFINED_CHRODOMACH = registerItem ("refined_chrodomach", new Item(new FabricItemSettings ()));
+    public static final Item TRIDYMITE_DUST = registerItem ("tridymite_dust", new Item(new FabricItemSettings ()));
 
     public static final Item MCLOCK = registerItem ("mclock", new Item(new FabricItemSettings ()));
 

@@ -41,5 +41,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider{
 
         getOrCreateTagBuilder (BlockTags.FENCE_GATES)
                 .add(ModBlocks.YELLOW_MERANTI_FENCE_GATE);
+
+        getOrCreateTagBuilder (BlockTags.SAND)
+                .add (ModBlocks.TRIDYMITE);
     }
 }
