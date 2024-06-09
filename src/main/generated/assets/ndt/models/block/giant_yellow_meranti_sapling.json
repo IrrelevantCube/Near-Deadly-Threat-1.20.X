@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cross",
-  "textures": {
-    "cross": "ndt:block/giant_yellow_meranti_sapling"
-  }
-}

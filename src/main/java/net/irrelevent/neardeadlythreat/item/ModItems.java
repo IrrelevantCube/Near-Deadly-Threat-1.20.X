@@ -24,7 +24,8 @@ public class ModItems {
     public static final Item CRAB_LEGS = registerItem ("crab_legs", new Item(new FabricItemSettings().food(ModFoodComponents.CRAB_LEGS)));
     public static final Item COOKED_CRAB_LEGS = registerItem ("cooked_crab_legs", new Item(new FabricItemSettings().food(ModFoodComponents.COOKED_CRAB_LEGS)));
 
-    public static final Item BRACHYTUS_SPAWN_EGG = registerItem ("brachytus_spawn_egg", new SpawnEggItem (ModEntities.BRACHYTUS, 0xff70380, 0x00008b, new FabricItemSettings ()));
+    public static final Item BRACHYTUS_SPAWN_EGG = registerItem ("brachytus_spawn_egg", new SpawnEggItem (ModEntities.BRACHYTUS, 0xff70388, 0x00008b, new FabricItemSettings ()));
+    public static final Item BRACHYMITE_SPAWN_EGG = registerItem ("brachytmite_spawn_egg", new SpawnEggItem (ModEntities.BRACHYMITE, 0x00008b,0xff70388 , new FabricItemSettings ()));
     private static void addItemsToIngredientTabItemGroup(FabricItemGroupEntries entries) {
 
     }

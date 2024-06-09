@@ -1,6 +1,7 @@
 package net.irrelevent.neardeadlythreat.entity.custom;
 
 import net.irrelevent.neardeadlythreat.entity.ModEntities;
+import net.irrelevent.neardeadlythreat.entity.ai.BrachymiteAttackGoal;
 import net.irrelevent.neardeadlythreat.entity.ai.BrachytusAttackGoal;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.*;
@@ -122,7 +123,7 @@ public class BrachytusEntity extends SpellcastingAnimalEntity {
             if (!super.canStart()) {
                 return false;
             }
-            int i = BrachytusEntity.this.getWorld().getTargets(VexEntity.class, this.closeVexPredicate, BrachytusEntity.this, BrachytusEntity.this.getBoundingBox().expand(16.0)).size();
+            int i = BrachytusEntity.this.getWorld().getTargets(BrachymiteEntity.class, this.closeVexPredicate, BrachytusEntity.this, BrachytusEntity.this.getBoundingBox().expand(16.0)).size();
             return BrachytusEntity.this.random.nextInt(8) + 1 > i;
         }
 
@@ -141,14 +142,14 @@ public class BrachytusEntity extends SpellcastingAnimalEntity {
             ServerWorld serverWorld = (ServerWorld)BrachytusEntity.this.getWorld();
             for (int i = 0; i < 3; ++i) {
                 BlockPos blockPos = BrachytusEntity.this.getBlockPos().add(-2 + BrachytusEntity.this.random.nextInt(2), 1, -2 + BrachytusEntity.this.random.nextInt(2));
-                VexEntity vexEntity = EntityType.VEX.create(BrachytusEntity.this.getWorld());
-                if (vexEntity == null) continue;
-                vexEntity.refreshPositionAndAngles(blockPos, 0.0f, 0.0f);
-                vexEntity.initialize(serverWorld, BrachytusEntity.this.getWorld().getLocalDifficulty(blockPos), SpawnReason.MOB_SUMMONED, null, null);
-                vexEntity.setOwner(BrachytusEntity.this);
-                vexEntity.setBounds(blockPos);
-                vexEntity.setLifeTicks(20 * (30 + BrachytusEntity.this.random.nextInt(90)));
-                serverWorld.spawnEntityAndPassengers(vexEntity);
+                BrachymiteEntity brachymiteEntity = ModEntities.BRACHYMITE.create(BrachytusEntity.this.getWorld());
+                if (brachymiteEntity == null) continue;
+                brachymiteEntity.refreshPositionAndAngles(blockPos, 0.0f, 0.0f);
+                brachymiteEntity.initialize(serverWorld, BrachytusEntity.this.getWorld().getLocalDifficulty(blockPos), SpawnReason.MOB_SUMMONED, null, null);
+                brachymiteEntity.setOwner(BrachytusEntity.this);
+                brachymiteEntity.setBounds(blockPos);
+                brachymiteEntity.setLifeTicks(20 * (30 + BrachytusEntity.this.random.nextInt(90)));
+                serverWorld.spawnEntityAndPassengers(brachymiteEntity);
             }
         }
 

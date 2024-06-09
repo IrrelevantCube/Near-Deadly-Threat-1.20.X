@@ -1,7 +1,6 @@
 package net.irrelevent.neardeadlythreat.entity.client;
 
 import net.irrelevent.neardeadlythreat.NearDeadlyThreat;
-import net.irrelevent.neardeadlythreat.NearDeadlyThreatClient;
 import net.irrelevent.neardeadlythreat.entity.custom.BrachytusEntity;
 import net.minecraft.client.render.VertexConsumerProvider;
 import net.minecraft.client.render.entity.EntityRendererFactory;

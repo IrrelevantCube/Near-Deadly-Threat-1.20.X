@@ -22,6 +22,7 @@ public class ModItemGroups {
                 entries.add(ModItems.MCLOCK);
 
                 entries.add(ModItems.BRACHYTUS_SPAWN_EGG);
+                entries.add(ModItems.BRACHYMITE_SPAWN_EGG);
 
                 entries.add(ModBlocks.DOMINITE_ORE);
                 entries.add(ModBlocks.CHRODOMACH_ORE);

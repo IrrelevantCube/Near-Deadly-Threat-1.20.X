@@ -46,6 +46,7 @@ public class NearDeadlyThreat implements ModInitializer {
 		FlammableBlockRegistry.getDefaultInstance ().add(ModBlocks.YELLOW_MERANTI_PLANKS, 10, 25);
 
 		FabricDefaultAttributeRegistry.register (ModEntities.BRACHYTUS, BrachytusEntity.createBrachytusAttributes ());
+		FabricDefaultAttributeRegistry.register (ModEntities.BRACHYMITE, BrachytusEntity.createBrachytusAttributes ());
 
 		ModTrunkPlacerTypes.register ();
 

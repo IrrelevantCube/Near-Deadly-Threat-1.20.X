@@ -8,4 +8,6 @@ public class ModModelLayers {
 
     public static final EntityModelLayer BRACHYTUS =
             new EntityModelLayer (new Identifier (NearDeadlyThreat.MOD_ID, "brachytus"), "main");
+    public static final EntityModelLayer BRACHYMITE =
+            new EntityModelLayer (new Identifier (NearDeadlyThreat.MOD_ID, "brachymite"), "main");
 }
