@@ -52,6 +52,7 @@ public class ModItemGroups {
                     entries.add(ModItems.COOKED_CRAB_LEGS);
                     entries.add(ModItems.TRIDYMITE_DUST);
                     entries.add(ModItems.BRACHYTUS_SHELL);
+                    entries.add(ModItems.BRACHYTUS_STEEL);
 
 
     }).build ());

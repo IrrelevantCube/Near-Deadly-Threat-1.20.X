@@ -24,5 +24,9 @@ public class ModOverworldRegions extends Region {
         this.addModifiedVanillaOverworldBiomes (mapper, modifiedVanillaOverworldBuilder -> {
             modifiedVanillaOverworldBuilder.replaceBiome (BiomeKeys.MANGROVE_SWAMP, ModBiomes.YELLOW_MERANTI_FOREST);
                 });
+        this.addModifiedVanillaOverworldBiomes (mapper, modifiedVanillaOverworldBuilder -> {
+            modifiedVanillaOverworldBuilder.replaceBiome (BiomeKeys.BEACH, ModBiomes.TRIDYMITE_BEACH);
+                });
     }
+
 }

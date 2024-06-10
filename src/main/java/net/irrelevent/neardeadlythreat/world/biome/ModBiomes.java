@@ -4,6 +4,7 @@ package net.irrelevent.neardeadlythreat.world.biome;
 import com.mojang.datafixers.kinds.IdF;
 import com.mojang.datafixers.util.Either;
 import net.irrelevent.neardeadlythreat.NearDeadlyThreat;
+import net.irrelevent.neardeadlythreat.entity.ModEntities;
 import net.minecraft.client.sound.MusicType;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.SpawnGroup;
@@ -33,11 +34,14 @@ public class ModBiomes {
     private static final MusicSound DEFAULT_MUSIC = null;
     public static final RegistryKey<Biome> YELLOW_MERANTI_FOREST = RegistryKey.of (RegistryKeys.BIOME,
             new Identifier (NearDeadlyThreat.MOD_ID, "yellow_meranti_forest"));
+    public static final RegistryKey<Biome> TRIDYMITE_BEACH = RegistryKey.of (RegistryKeys.BIOME,
+            new Identifier (NearDeadlyThreat.MOD_ID, "tridymite_beach"));
 
     public static void bootstrap(Registerable<Biome> context) {
         context.register (YELLOW_MERANTI_FOREST, yellowMerantiForest (context));
-
+        context.register (TRIDYMITE_BEACH, tridymiteBeach (context));
     }
+
 
 
     public static void globalOverworldGeneration(GenerationSettings.LookupBackedBuilder builder) {
@@ -94,6 +98,52 @@ public class ModBiomes {
                             .grassColor (0x78a27f)
                             .foliageColor (0x718307)
                             .fogColor (0x75b982)
+                            .music (musicSound).build ())
+
+
+                    .build ();
+
+
+        }
+
+    }
+    public static Biome tridymiteBeach(Registerable<Biome> context) {
+        SpawnSettings.Builder spawnBuilder = new SpawnSettings.Builder ();
+
+        spawnBuilder.spawn (SpawnGroup.CREATURE, new SpawnSettings.SpawnEntry (ModEntities.BRACHYTUS, 1, 1, 2));
+        spawnBuilder.spawn (SpawnGroup.CREATURE, new SpawnSettings.SpawnEntry (ModEntities.BRACHYMITE, 2, 2, 4));
+
+
+        DefaultBiomeFeatures.addBatsAndMonsters (spawnBuilder);
+        DefaultBiomeFeatures.addDesertMobs (spawnBuilder);
+
+        GenerationSettings.LookupBackedBuilder biomeBuilder =
+                new GenerationSettings.LookupBackedBuilder (context.getRegistryLookup (RegistryKeys.PLACED_FEATURE),
+                        context.getRegistryLookup (RegistryKeys.CONFIGURED_CARVER));
+
+        globalOverworldGeneration (biomeBuilder);
+        DefaultBiomeFeatures.addMossyRocks (biomeBuilder);
+        DefaultBiomeFeatures.addDefaultOres (biomeBuilder);
+        DefaultBiomeFeatures.addSprings (biomeBuilder);
+
+        DefaultBiomeFeatures.addDefaultVegetation (biomeBuilder);
+        MusicSound musicSound = MusicType.createIngameMusic (SoundEvents.MUSIC_OVERWORLD_DESERT);
+        {
+
+
+            return new Biome.Builder ()
+                    .precipitation (true)
+                    .downfall (0.2f)
+                    .temperature (1.2f)
+                    .generationSettings (biomeBuilder.build ())
+                    .spawnSettings (spawnBuilder.build ())
+                    .effects ((new BiomeEffects.Builder ())
+                            .waterColor (0xb2d1ff)
+                            .waterFogColor (0x6a7d99)
+                            .skyColor (0x66a3ff)
+                            .grassColor (0x78a27f)
+                            .foliageColor (0x718307)
+                            .fogColor (0xa0bce5)
                             .music (musicSound).build ())
 
 
