@@ -35,6 +35,9 @@
   "block.ndt.yellow_meranti_trapdoor": "Yellow Meranti Trapdoor",
   "block.ndt.yellow_meranti_sapling": "Yellow Meranti Sapling",
 
+  "entity.ndt.brachytus": "Brachytus",
+  "entity.ndt.brachymite": "Brachymite",
+
   "itemgroup.miscll": "Miscll.",
 
   "item.ndt.crab_legs": "Brachymite Crab Legs",

@@ -3,18 +3,25 @@ package net.irrelevent.neardeadlythreat.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.irrelevent.neardeadlythreat.block.ModBlocks;
+import net.irrelevent.neardeadlythreat.entity.ModEntities;
+import net.irrelevent.neardeadlythreat.entity.custom.BrachytusEntity;
 import net.irrelevent.neardeadlythreat.item.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.data.server.loottable.BlockLootTableGenerator;
 import net.minecraft.enchantment.Enchantments;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityType;
+import net.minecraft.entity.mob.EndermanEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
+import net.minecraft.loot.LootPool;
 import net.minecraft.loot.LootTable;
 import net.minecraft.loot.condition.TableBonusLootCondition;
 import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.loot.entry.LeafEntry;
 import net.minecraft.loot.entry.LootPoolEntry;
 import net.minecraft.loot.function.ApplyBonusLootFunction;
+import net.minecraft.loot.function.LootingEnchantLootFunction;
 import net.minecraft.loot.function.SetCountLootFunction;
 import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
 import net.minecraft.loot.provider.number.UniformLootNumberProvider;
@@ -38,6 +45,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop (ModBlocks.STRIPPED_YELLOW_MERANTI_WOOD);
 
 
+
         addDrop (ModBlocks.YELLOW_MERANTI_STAIRS);
         addDrop (ModBlocks.YELLOW_MERANTI_FENCE);
         addDrop (ModBlocks.YELLOW_MERANTI_FENCE_GATE);
@@ -59,6 +67,9 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop (ModBlocks.CHRODOMACH_ORE, copperLikeOreDrops(ModBlocks.CHRODOMACH_ORE, ModItems.RAW_CHRODOMACH));
 
         addDrop (ModBlocks.TRIDYMITE, copperLikeOreDrops (ModBlocks.TRIDYMITE, ModItems.TRIDYMITE_DUST));
+
+
+
     }
 
     public LootTable.Builder copperLikeOreDrops(Block drop, Item item, float ... chance) {

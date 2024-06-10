@@ -11,6 +11,7 @@ import net.irrelevent.neardeadlythreat.block.ModBlocks;
 import net.irrelevent.neardeadlythreat.datagen.ModWorldGenerator;
 import net.irrelevent.neardeadlythreat.effect.ModEffects;
 import net.irrelevent.neardeadlythreat.entity.ModEntities;
+import net.irrelevent.neardeadlythreat.entity.custom.BrachymiteEntity;
 import net.irrelevent.neardeadlythreat.entity.custom.BrachytusEntity;
 import net.irrelevent.neardeadlythreat.item.ModItemGroups;
 import net.irrelevent.neardeadlythreat.item.ModItems;
@@ -46,7 +47,7 @@ public class NearDeadlyThreat implements ModInitializer {
 		FlammableBlockRegistry.getDefaultInstance ().add(ModBlocks.YELLOW_MERANTI_PLANKS, 10, 25);
 
 		FabricDefaultAttributeRegistry.register (ModEntities.BRACHYTUS, BrachytusEntity.createBrachytusAttributes ());
-		FabricDefaultAttributeRegistry.register (ModEntities.BRACHYMITE, BrachytusEntity.createBrachytusAttributes ());
+		FabricDefaultAttributeRegistry.register (ModEntities.BRACHYMITE, BrachymiteEntity.createBrachymiteAttributes ());
 
 		ModTrunkPlacerTypes.register ();
 

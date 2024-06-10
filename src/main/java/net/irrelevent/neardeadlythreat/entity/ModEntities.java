@@ -14,7 +14,7 @@ import net.minecraft.util.Identifier;
 
 public class ModEntities {
         public static final EntityType<BrachytusEntity>  BRACHYTUS = Registry.register (Registries.ENTITY_TYPE,
-                new Identifier (NearDeadlyThreat.MOD_ID, "brachytus"),
+                new Identifier (NearDeadlyThreat.MOD_ID, "brachytus.json"),
                 FabricEntityTypeBuilder.create (SpawnGroup.MONSTER, BrachytusEntity::new).dimensions (EntityDimensions.fixed (3f, 2f)).build ());
         public static final EntityType<BrachymiteEntity>  BRACHYMITE = Registry.register (Registries.ENTITY_TYPE,
                 new Identifier (NearDeadlyThreat.MOD_ID, "brachymite"),

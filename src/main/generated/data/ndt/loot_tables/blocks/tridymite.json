@@ -47,7 +47,7 @@
                 },
                 {
                   "type": "minecraft:item",
-                  "name": "ndt:tridymite"
+                  "name": "ndt:tridymite_dust"
                 }
               ],
               "conditions": [

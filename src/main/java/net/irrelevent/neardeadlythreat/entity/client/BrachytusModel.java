@@ -19,14 +19,14 @@ public class BrachytusModel<T extends BrachytusEntity> extends SinglePartEntityM
 	private final ModelPart head;
 
 	public BrachytusModel(ModelPart root) {
-		this.brachytus = root.getChild("brachytus");
+		this.brachytus = root.getChild("brachytus.json");
 		this.head = brachytus.getChild ("head");
 
 	}
 	public static TexturedModelData getTexturedModelData() {
 		ModelData modelData = new ModelData();
 		ModelPartData modelPartData = modelData.getRoot();
-		ModelPartData brachytus = modelPartData.addChild("brachytus", ModelPartBuilder.create(), ModelTransform.pivot(0.0F, 24.0F, 0.0F));
+		ModelPartData brachytus = modelPartData.addChild("brachytus.json", ModelPartBuilder.create(), ModelTransform.pivot(0.0F, 24.0F, 0.0F));
 
 		ModelPartData leg8 = brachytus.addChild("leg8", ModelPartBuilder.create(), ModelTransform.of(15.0F, -12.0275F, 12.4829F, 0.0F, 0.48F, 0.0F));
 

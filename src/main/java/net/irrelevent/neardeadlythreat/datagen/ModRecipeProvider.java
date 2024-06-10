@@ -56,6 +56,12 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion (hasItem(ModBlocks.STRIPPED_YELLOW_MERANTI_WOOD), conditionsFromItem (ModBlocks.STRIPPED_YELLOW_MERANTI_WOOD))
                 .offerTo (exporter, new Identifier (getRecipeName(ModBlocks.YELLOW_MERANTI_PLANKS)));
 
+        ShapelessRecipeJsonBuilder.create (RecipeCategory.MISC, ModItems.BRACHYTUS_STEEL, 2)
+                .criterion (hasItem(ModItems.BRACHYTUS_SHELL), conditionsFromItem (ModItems.BRACHYTUS_SHELL))
+                .criterion (hasItem (ModItems.TRIDYMITE_DUST), conditionsFromItem (ModItems.TRIDYMITE_DUST))
+                .criterion (hasItem(ModItems.DOMINITE), conditionsFromItem (ModItems.DOMINITE))
+                .offerTo (exporter, new Identifier (getRecipeName (ModItems.BRACHYTUS_STEEL)));
+
 
 
         }
