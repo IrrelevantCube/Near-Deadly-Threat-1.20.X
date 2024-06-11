@@ -69,14 +69,11 @@
     [],
     [
       "minecraft:spring_water",
-      "minecraft:spring_lava",
-      "minecraft:spring_water",
       "minecraft:spring_lava"
     ],
     [
       "minecraft:glow_lichen",
-      "minecraft:patch_sugar_cane",
-      "minecraft:patch_pumpkin"
+      "minecraft:patch_sugar_cane"
     ]
   ],
   "has_precipitation": true,
@@ -88,18 +85,12 @@
         "maxCount": 8,
         "minCount": 8,
         "weight": 10
-      },
-      {
-        "type": "minecraft:bat",
-        "maxCount": 8,
-        "minCount": 8,
-        "weight": 10
       }
     ],
     "axolotls": [],
     "creature": [
       {
-        "type": "ndt:brachytus.json",
+        "type": "ndt:brachytus",
         "maxCount": 2,
         "minCount": 1,
         "weight": 1

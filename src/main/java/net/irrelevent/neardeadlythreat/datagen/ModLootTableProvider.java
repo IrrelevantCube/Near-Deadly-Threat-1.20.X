@@ -45,7 +45,6 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop (ModBlocks.STRIPPED_YELLOW_MERANTI_WOOD);
 
 
-
         addDrop (ModBlocks.YELLOW_MERANTI_STAIRS);
         addDrop (ModBlocks.YELLOW_MERANTI_FENCE);
         addDrop (ModBlocks.YELLOW_MERANTI_FENCE_GATE);
@@ -71,6 +70,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
 
     }
+
 
     public LootTable.Builder copperLikeOreDrops(Block drop, Item item, float ... chance) {
         ((LeafEntry.Builder)ItemEntry.builder(ModItems.RAW_CHRODOMACH).apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 3.0f)))).apply(ApplyBonusLootFunction.oreDrops(Enchantments.FORTUNE).conditionally ((TableBonusLootCondition.builder(Enchantments.FORTUNE, CHRODOMACH_DROP_CHANCE))));

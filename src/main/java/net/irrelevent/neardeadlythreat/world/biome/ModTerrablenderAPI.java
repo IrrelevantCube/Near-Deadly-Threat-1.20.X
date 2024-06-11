@@ -2,6 +2,7 @@ package net.irrelevent.neardeadlythreat.world.biome;
 
 import net.irrelevent.neardeadlythreat.NearDeadlyThreat;
 import net.irrelevent.neardeadlythreat.world.biome.surface.ModMaterialRules;
+import net.irrelevent.neardeadlythreat.world.biome.surface.ModMaterialRules1;
 import net.minecraft.util.Identifier;
 import terrablender.api.RegionType;
 import terrablender.api.Regions;
@@ -14,6 +15,7 @@ public class ModTerrablenderAPI implements TerraBlenderApi {
         Regions.register (new ModOverworldRegions (new Identifier (NearDeadlyThreat.MOD_ID, "overworld"), RegionType.OVERWORLD, 4));
 
         SurfaceRuleManager.addSurfaceRules (SurfaceRuleManager.RuleCategory.OVERWORLD, NearDeadlyThreat.MOD_ID, ModMaterialRules.makeRules());
+        SurfaceRuleManager.addSurfaceRules (SurfaceRuleManager.RuleCategory.OVERWORLD, NearDeadlyThreat.MOD_ID, ModMaterialRules1.makeRules());
     }
 }
 

@@ -14,7 +14,7 @@ import java.util.function.Consumer;
 
 public class ModOverworldRegions extends Region {
     public ModOverworldRegions(Identifier name, RegionType type, int weight) {
-        super (name, type, weight);
+        super (name, RegionType.OVERWORLD, weight);
     }
 
 

@@ -7,7 +7,10 @@
   "item.ndt.brachytus_shell": "Brachytus Shell",
   "item.ndt.brachytus_steel": "Brachytus Steel",
 
-  "item.ndt.tridymite": "Tridymite",
+  "biome.ndt.tridymite_beach": "Tridymite Beach",
+  "biome.ndt.yellow_meranti_forest": "Yellow Meranti Forest",
+
+  "block.ndt.tridymite": "Tridymite",
   "item.ndt.tridymite_dust": "Tridymite Dust",
 
   "item.ndt.brachytus_spawn_egg": "Brachytus Spawn Egg",

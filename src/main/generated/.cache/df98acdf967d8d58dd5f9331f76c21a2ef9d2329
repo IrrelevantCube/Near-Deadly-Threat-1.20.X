@@ -1,4 +1,4 @@
-// 1.20.1	2024-06-10T16:20:58.4744699	Near Deadly Threat/Model Definitions
+// 1.20.1	2024-06-11T10:12:54.5681171	Near Deadly Threat/Model Definitions
 36bb14c1129b779701b370bafbd0867fb776e3ba assets\ndt\models\block\yellow_meranti_pressure_plate_down.json
 aa287f7da5c63cd6707505449679330a83e94096 assets\ndt\models\item\dominite_ore.json
 8b6e69485d30748904bda3315223cfd488f5a37f assets\ndt\blockstates\yellow_meranti_slab.json
@@ -16,8 +16,8 @@ a2f1090f6569230c5fefc29a880f715af00f370b assets\ndt\models\block\stripped_yellow
 cc2db9d4dc8341502c4309f2c66e203db4de3e47 assets\ndt\models\block\chrodomach_ore.json
 2b88299334d8234b8f19cacae5589266fb0f575b assets\ndt\models\item\refined_dominite.json
 880165487c39047f4f0b45ddce105caf7b684d45 assets\ndt\models\block\tridymite.json
-4f8ab5ab4bb4d41bc188189edb37eb854763fdf0 assets\ndt\models\item\dominite_isotope.json
 9d13a318c80d959e0a1abfb6f2cc4bd5b29a1633 assets\ndt\models\item\cooked_crab_legs.json
+4f8ab5ab4bb4d41bc188189edb37eb854763fdf0 assets\ndt\models\item\dominite_isotope.json
 8d92ead7e935952393bbd75a455a30c9e9b56eb7 assets\ndt\models\item\yellow_meranti_pressure_plate.json
 5adc2c8cb2952384c1865ba0820c3eeeee385d01 assets\ndt\models\item\yellow_meranti_stairs.json
 690dc96c6678d4919ca8f0e80209a7bb862bb3d5 assets\ndt\models\item\tridymite.json
@@ -33,8 +33,8 @@ af44989fefe70f579b08929bdf011d9bb81e5cce assets\ndt\blockstates\yellow_meranti_b
 cf5ddd7d9866c56cf459ef30fa54e066cb4de669 assets\ndt\models\item\yellow_meranti_slab.json
 cc173557b7f10d114224718df2e943e964bd6c2a assets\ndt\models\item\yellow_meranti_fence_gate.json
 877f30e4fc8ca3ce6688bf51555e7ad03dbc8df9 assets\ndt\models\item\yellow_meranti_wood.json
-fbc6c1f48b5265097a207dba0b4f883d7c95f580 assets\ndt\models\block\yellow_meranti_fence_gate_wall_open.json
 fa44b110ef56809d488e3100b634dde1bec1fe93 assets\ndt\models\block\yellow_meranti_fence_gate_open.json
+fbc6c1f48b5265097a207dba0b4f883d7c95f580 assets\ndt\models\block\yellow_meranti_fence_gate_wall_open.json
 313616ad41c29fbc89ba1bba9a8f2cc2a235a28e assets\ndt\models\item\refined_chrodomach.json
 41cff2125ec2411323891c94c215f76c26c94119 assets\ndt\models\block\yellow_meranti_wood.json
 2ad8306850bcb6bc96b7feed11b4ca15ab52cd27 assets\ndt\models\block\yellow_meranti_stairs_inner.json
