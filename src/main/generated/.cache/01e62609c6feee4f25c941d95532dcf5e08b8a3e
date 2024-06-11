@@ -1,15 +1,15 @@
-// 1.20.1	2024-06-11T10:12:54.5791122	Near Deadly Threat/Recipes
-0e48599389385f2613a8faa23e3b0d180e8629d0 data\ndt\recipes\dominite_from_blasting_dominite.json
+// 1.20.1	2024-06-11T16:22:41.1395618	Near Deadly Threat/Recipes
 f65caf71c479e8fbae7cb1f0847f2c79fbd09ad1 data\ndt\recipes\dominite.json
-27d3af21ebab093d610993963e2b74a9696a4699 data\ndt\advancements\recipes\decorations\dominite_ore.json
 897a370a09df7bbd36a23b1421cfbe0c058127ef data\ndt\recipes\dominite_from_smelting_dominite.json
+68737bd658c23624d59f3f88d13d36d24a7564ce data\ndt\advancements\recipes\misc\dominite.json
+5fd68b0a029ff991efe4390acfcdf8cc811843d0 data\ndt\advancements\recipes\building_blocks\yellow_meranti_planks.json
+cfa1ee73080f739620f6d7fc25b23c81d7af374a data\ndt\recipes\dominite_block.json
+0e48599389385f2613a8faa23e3b0d180e8629d0 data\ndt\recipes\dominite_from_blasting_dominite.json
+27d3af21ebab093d610993963e2b74a9696a4699 data\ndt\advancements\recipes\decorations\dominite_ore.json
 ba74f014f50793005d767bb4537fc5ab1b0fbaf7 data\ndt\recipes\dominite_ore.json
 caa68b5a359cdf48fe4f9d80f71a1e1005fcc642 data\ndt\recipes\brachytus_steel.json
 784a7ac069f83ad11d8786d4689abbd7e9332686 data\ndt\advancements\recipes\decorations\dominite_block.json
-68737bd658c23624d59f3f88d13d36d24a7564ce data\ndt\advancements\recipes\misc\dominite.json
-5fd68b0a029ff991efe4390acfcdf8cc811843d0 data\ndt\advancements\recipes\building_blocks\yellow_meranti_planks.json
 f3f212ab46ce15d02d2b5060810cba77399be65f data\ndt\advancements\recipes\misc\brachytus_steel.json
-cfa1ee73080f739620f6d7fc25b23c81d7af374a data\ndt\recipes\dominite_block.json
 61b55806641b0f7db093d6aa82fe6de280398cac data\ndt\advancements\recipes\misc\dominite_from_blasting_dominite.json
 eb0cf84cdd60ca415efe3cc86602c34543b23e98 data\ndt\advancements\recipes\misc\dominite_from_smelting_dominite.json
 12c7b353d9453a3f2310c6bd293bcdae10d22512 data\ndt\recipes\yellow_meranti_planks.json

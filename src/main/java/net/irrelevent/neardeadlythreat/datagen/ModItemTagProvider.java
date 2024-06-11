@@ -3,6 +3,7 @@ package net.irrelevent.neardeadlythreat.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.irrelevent.neardeadlythreat.block.ModBlocks;
+import net.irrelevent.neardeadlythreat.item.ModItems;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.ItemTags;
 
@@ -14,6 +15,8 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
     }
     @Override
     protected void configure(RegistryWrapper.WrapperLookup arg){
+        getOrCreateTagBuilder (ItemTags.TRIMMABLE_ARMOR)
+                .add (ModItems.BRACHYTUS_STEEL_BOOTS, ModItems.BRACHYTUS_STEEL_CHESTPLATE, ModItems.BRACHYTUS_STEEL_HELMET, ModItems.BRACHYTUS_STEEL_LEGGINGS);
 
         getOrCreateTagBuilder (ItemTags.PLANKS)
                 .add (ModBlocks.YELLOW_MERANTI_PLANKS.asItem ());

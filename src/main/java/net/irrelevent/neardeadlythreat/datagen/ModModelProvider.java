@@ -8,6 +8,7 @@ import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Model;
 import net.minecraft.data.client.Models;
+import net.minecraft.item.ArmorItem;
 import net.minecraft.util.Identifier;
 
 import java.util.Optional;
@@ -58,6 +59,10 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register (ModItems.BRACHYTUS_STEEL, Models.GENERATED);
         itemModelGenerator.register (ModItems.BRACHYTUS_SPAWN_EGG, new Model (Optional.of (new Identifier ("item/template_spawn_egg")), Optional.empty ()));
         itemModelGenerator.register (ModItems.BRACHYMITE_SPAWN_EGG, new Model (Optional.of (new Identifier ("item/template_spawn_egg")), Optional.empty ()));
+        itemModelGenerator.registerArmor ((ArmorItem) ModItems.BRACHYTUS_STEEL_HELMET);
+        itemModelGenerator.registerArmor ((ArmorItem) ModItems.BRACHYTUS_STEEL_LEGGINGS);
+        itemModelGenerator.registerArmor ((ArmorItem) ModItems.BRACHYTUS_STEEL_CHESTPLATE);
+        itemModelGenerator.registerArmor ((ArmorItem) ModItems.BRACHYTUS_STEEL_BOOTS);
 
     }
 }

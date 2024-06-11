@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.irrelevent.neardeadlythreat.NearDeadlyThreat;
 import net.irrelevent.neardeadlythreat.entity.ModEntities;
+import net.minecraft.item.ArmorItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.item.SpawnEggItem;
@@ -29,6 +30,15 @@ public class ModItems {
 
     public static final Item BRACHYTUS_SPAWN_EGG = registerItem ("brachytus_spawn_egg", new SpawnEggItem (ModEntities.BRACHYTUS, 0xff70388, 0x00008b, new FabricItemSettings ()));
     public static final Item BRACHYMITE_SPAWN_EGG = registerItem ("brachymite_spawn_egg", new SpawnEggItem (ModEntities.BRACHYMITE, 0x00008b,0xff70388 , new FabricItemSettings ()));
+
+    public static final Item BRACHYTUS_STEEL_CHESTPLATE = registerItem ("brachytus_steel_chestplate",
+            new ArmorItem (ModArmorMaterials.BRACHYTUS_STEEL, ArmorItem.Type.CHESTPLATE, new FabricItemSettings ()));
+    public static final Item BRACHYTUS_STEEL_HELMET = registerItem ("brachytus_steel_helmet",
+            new ArmorItem (ModArmorMaterials.BRACHYTUS_STEEL, ArmorItem.Type.HELMET, new FabricItemSettings ()));
+    public static final Item BRACHYTUS_STEEL_LEGGINGS = registerItem ("brachytus_steel_leggings",
+            new ArmorItem (ModArmorMaterials.BRACHYTUS_STEEL, ArmorItem.Type.LEGGINGS, new FabricItemSettings ()));
+    public static final Item BRACHYTUS_STEEL_BOOTS = registerItem ("brachytus_steel_boots",
+            new ArmorItem (ModArmorMaterials.BRACHYTUS_STEEL, ArmorItem.Type.BOOTS, new FabricItemSettings ()));
     private static void addItemsToIngredientTabItemGroup(FabricItemGroupEntries entries) {
 
     }

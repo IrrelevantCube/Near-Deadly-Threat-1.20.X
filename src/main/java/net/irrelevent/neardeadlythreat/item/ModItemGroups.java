@@ -54,6 +54,11 @@ public class ModItemGroups {
                     entries.add(ModItems.BRACHYTUS_SHELL);
                     entries.add(ModItems.BRACHYTUS_STEEL);
 
+                    entries.add(ModItems.BRACHYTUS_STEEL_CHESTPLATE);
+                    entries.add(ModItems.BRACHYTUS_STEEL_BOOTS);
+                    entries.add(ModItems.BRACHYTUS_STEEL_HELMET);
+                    entries.add(ModItems.BRACHYTUS_STEEL_LEGGINGS);
+
 
     }).build ());
 

@@ -12,7 +12,7 @@ import terrablender.api.TerraBlenderApi;
 public class ModTerrablenderAPI implements TerraBlenderApi {
     @Override
     public void onTerraBlenderInitialized() {
-        Regions.register (new ModOverworldRegions (new Identifier (NearDeadlyThreat.MOD_ID, "overworld"), RegionType.OVERWORLD, 4));
+        Regions.register (new ModOverworldRegions (new Identifier (NearDeadlyThreat.MOD_ID, "overworld"), RegionType.OVERWORLD, 40));
 
         SurfaceRuleManager.addSurfaceRules (SurfaceRuleManager.RuleCategory.OVERWORLD, NearDeadlyThreat.MOD_ID, ModMaterialRules.makeRules());
         SurfaceRuleManager.addSurfaceRules (SurfaceRuleManager.RuleCategory.OVERWORLD, NearDeadlyThreat.MOD_ID, ModMaterialRules1.makeRules());
