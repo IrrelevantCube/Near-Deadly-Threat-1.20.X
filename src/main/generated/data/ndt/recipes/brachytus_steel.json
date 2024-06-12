@@ -1,7 +1,13 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "ingredients": [],
+  "ingredients": [
+    {
+      "item": "ndt:brachytus_shell",
+      "item": "ndt:tridymite_dust",
+      "item": "ndt:refined_dominite"
+    }
+  ],
   "result": {
     "count": 2,
     "item": "ndt:brachytus_steel"

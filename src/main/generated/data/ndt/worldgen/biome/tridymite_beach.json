@@ -6,7 +6,7 @@
       "minecraft:canyon"
     ]
   },
-  "downfall": 0.1,
+  "downfall": 0.2,
   "effects": {
     "fog_color": 10534117,
     "foliage_color": 7439111,
@@ -69,17 +69,26 @@
     [],
     [
       "minecraft:spring_water",
+      "minecraft:spring_lava",
+      "minecraft:spring_water",
       "minecraft:spring_lava"
     ],
     [
       "minecraft:glow_lichen",
-      "minecraft:patch_sugar_cane"
+      "minecraft:patch_sugar_cane",
+      "minecraft:patch_pumpkin"
     ]
   ],
   "has_precipitation": true,
   "spawn_costs": {},
   "spawners": {
     "ambient": [
+      {
+        "type": "minecraft:bat",
+        "maxCount": 8,
+        "minCount": 8,
+        "weight": 10
+      },
       {
         "type": "minecraft:bat",
         "maxCount": 8,
@@ -230,5 +239,5 @@
     "water_ambient": [],
     "water_creature": []
   },
-  "temperature": 0.8
+  "temperature": 1.2
 }

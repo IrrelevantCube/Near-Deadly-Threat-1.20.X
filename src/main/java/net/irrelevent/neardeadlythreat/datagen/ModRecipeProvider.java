@@ -62,6 +62,39 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion (hasItem(ModItems.DOMINITE), conditionsFromItem (ModItems.DOMINITE))
                 .offerTo (exporter, new Identifier (getRecipeName (ModItems.BRACHYTUS_STEEL)));
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.BRACHYTUS_STEEL_HELMET, 1)
+                .pattern("rrr")
+                .pattern("r r")
+                .pattern("   ")
+                .input ('r', ModItems.BRACHYTUS_STEEL)
+                .criterion (hasItem (ModItems.BRACHYTUS_STEEL), conditionsFromItem (ModItems.BRACHYTUS_STEEL))
+                .offerTo (exporter, new Identifier (getRecipeName (ModItems.BRACHYTUS_STEEL_HELMET)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.BRACHYTUS_STEEL_LEGGINGS, 1)
+                .pattern("rrr")
+                .pattern("r r")
+                .pattern("r r")
+                .input ('r', ModItems.BRACHYTUS_STEEL)
+                .criterion (hasItem (ModItems.BRACHYTUS_STEEL), conditionsFromItem (ModItems.BRACHYTUS_STEEL))
+                .offerTo (exporter, new Identifier (getRecipeName (ModItems.BRACHYTUS_STEEL_LEGGINGS)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.BRACHYTUS_STEEL_CHESTPLATE, 1)
+                .pattern("r r")
+                .pattern("rrr")
+                .pattern("rrr")
+                .input ('r', ModItems.BRACHYTUS_STEEL)
+                .criterion (hasItem (ModItems.BRACHYTUS_STEEL), conditionsFromItem (ModItems.BRACHYTUS_STEEL))
+                .offerTo (exporter, new Identifier (getRecipeName (ModItems.BRACHYTUS_STEEL_CHESTPLATE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.BRACHYTUS_STEEL_BOOTS, 1)
+                .pattern("   ")
+                .pattern("r r")
+                .pattern("r r")
+                .input ('r', ModItems.BRACHYTUS_STEEL)
+                .criterion (hasItem (ModItems.BRACHYTUS_STEEL), conditionsFromItem (ModItems.BRACHYTUS_STEEL))
+                .offerTo (exporter, new Identifier (getRecipeName (ModItems.BRACHYTUS_STEEL_BOOTS)));
+
+
 
 
         }
