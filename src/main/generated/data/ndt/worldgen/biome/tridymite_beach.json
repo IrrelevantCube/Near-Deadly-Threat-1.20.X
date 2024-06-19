@@ -11,6 +11,12 @@
     "fog_color": 10534117,
     "foliage_color": 7439111,
     "grass_color": 7905919,
+    "mood_sound": {
+      "block_search_extent": 8,
+      "offset": 2.0,
+      "sound": "minecraft:ambient.cave",
+      "tick_delay": 6000
+    },
     "music": {
       "max_delay": 24000,
       "min_delay": 12000,
@@ -59,6 +65,7 @@
       "minecraft:ore_redstone",
       "minecraft:ore_redstone_lower",
       "minecraft:ore_diamond",
+      "minecraft:ore_diamond_medium",
       "minecraft:ore_diamond_large",
       "minecraft:ore_diamond_buried",
       "minecraft:ore_lapis",
@@ -68,8 +75,6 @@
     ],
     [],
     [
-      "minecraft:spring_water",
-      "minecraft:spring_lava",
       "minecraft:spring_water",
       "minecraft:spring_lava"
     ],

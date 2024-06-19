@@ -58,11 +58,11 @@
   },
   "requirements": [
     [
+      "has_the_recipe",
       "has_yellow_meranti_log",
       "has_yellow_meranti_wood",
       "has_stripped_yellow_meranti_log",
-      "has_stripped_yellow_meranti_wood",
-      "has_the_recipe"
+      "has_stripped_yellow_meranti_wood"
     ]
   ],
   "rewards": {

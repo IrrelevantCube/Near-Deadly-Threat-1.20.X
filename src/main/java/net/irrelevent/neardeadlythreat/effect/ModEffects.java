@@ -1,10 +1,13 @@
 package net.irrelevent.neardeadlythreat.effect;
 
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.irrelevent.neardeadlythreat.NearDeadlyThreat;
+import net.irrelevent.neardeadlythreat.item.ModItems;
 import net.minecraft.entity.attribute.EntityAttributeModifier;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectCategory;
+import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -19,6 +22,9 @@ public class ModEffects{
     }
 
     public static void registerEffects() {
+        NearDeadlyThreat.LOGGER.info("Registering Mod Effects for " + NearDeadlyThreat.MOD_ID);
+
         AQUA_PROFICIENT = registerStatusEffect ("aqua_proficient");
     }
+
 }

@@ -39,6 +39,8 @@ public class BrachymiteEntity extends AnimalEntity implements Ownable{
     private boolean alive;
     private MobEntity owner;
 
+
+
     @Override
     protected void updateLimbs(float posDelta) {
         float f = this.getPose() == EntityPose.STANDING ? Math.min(posDelta * 6.0f, 1.0f) : 0.0f;
@@ -95,8 +97,8 @@ public class BrachymiteEntity extends AnimalEntity implements Ownable{
         return MobEntity.createMobAttributes ()
                 .add (EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.7)
                 .add (EntityAttributes.GENERIC_FOLLOW_RANGE, 25.0)
-                .add (EntityAttributes.GENERIC_MAX_HEALTH, 0.5)
-                .add (EntityAttributes.GENERIC_ATTACK_DAMAGE, 1.0);
+                .add (EntityAttributes.GENERIC_MAX_HEALTH, 1.0)
+                .add (EntityAttributes.GENERIC_ATTACK_DAMAGE, 2.0);
 
     }
 

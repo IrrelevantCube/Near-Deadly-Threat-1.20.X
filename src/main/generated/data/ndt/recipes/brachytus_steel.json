@@ -3,8 +3,12 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "ndt:brachytus_shell",
-      "item": "ndt:tridymite_dust",
+      "item": "ndt:brachytus_shell"
+    },
+    {
+      "item": "ndt:tridymite_dust"
+    },
+    {
       "item": "ndt:refined_dominite"
     }
   ],

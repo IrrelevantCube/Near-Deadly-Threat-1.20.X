@@ -3,8 +3,7 @@ package net.irrelevent.neardeadlythreat.block;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.irrelevent.neardeadlythreat.NearDeadlyThreat;
-import net.irrelevent.neardeadlythreat.world.tree.FracturedYellowMerantiSaplingGenerator;
-import net.irrelevent.neardeadlythreat.world.tree.YellowMerantiSaplingGenerator;
+import net.irrelevent.neardeadlythreat.world.tree.ModSaplingGenerators;
 import net.minecraft.block.*;
 import net.minecraft.block.enums.Instrument;
 import net.minecraft.block.piston.PistonBehavior;
@@ -13,14 +12,23 @@ import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
+import net.minecraft.util.ColorCode;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 
 public class ModBlocks {
     public static final Block DOMINITE_ORE = registerBlock ("dominite_ore",
-            new ExperienceDroppingBlock (FabricBlockSettings.copyOf(Blocks.ANCIENT_DEBRIS).strength (3.5f, 2000).instrument(Instrument.CHIME).sounds(BlockSoundGroup.AMETHYST_BLOCK), UniformIntProvider.create (5, 8)));
+            new ExperienceDroppingBlock (UniformIntProvider.create (5, 8), FabricBlockSettings.copyOf(Blocks.ANCIENT_DEBRIS).strength (3.5f, 2000).instrument(Instrument.CHIME).sounds(BlockSoundGroup.AMETHYST_BLOCK)));
+    public static final Block ALUMINUM_ORE = registerBlock ("aluminum_ore",
+            new ExperienceDroppingBlock (UniformIntProvider.create (5, 8), FabricBlockSettings.copyOf(Blocks.IRON_ORE).strength (1.5f, 2000).instrument(Instrument.SNARE).sounds(BlockSoundGroup.STONE)));
+    public static final Block RAW_ALUMINUM_BLOCK = registerBlock ("raw_aluminum_block",
+            new Block (FabricBlockSettings.copyOf(Blocks.RAW_IRON_BLOCK).strength (1.5f, 2000).instrument(Instrument.SNARE).sounds(BlockSoundGroup.COPPER)));
+    public static final Block ALUMINUM_BLOCK = registerBlock ("aluminum_block",
+            new Block (FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).strength (1.5f, 2000).instrument(Instrument.SNARE).sounds(BlockSoundGroup.COPPER)));
+    public static final Block IRON_II_ALUMINATE = registerBlock ("iron_ii_aluminate",
+            new Block (FabricBlockSettings.copyOf(Blocks.OBSIDIAN).strength (1.5f, 20000).instrument(Instrument.HAT).sounds(BlockSoundGroup.LANTERN)));
     public static final Block CHRODOMACH_ORE = registerBlock ("chrodomach_ore",
-            new ExperienceDroppingBlock (FabricBlockSettings.copyOf(Blocks.ANCIENT_DEBRIS).strength (5.5f, 30000).instrument(Instrument.IRON_XYLOPHONE).sounds(BlockSoundGroup.AMETHYST_BLOCK), UniformIntProvider.create (8, 12)));
+            new ExperienceDroppingBlock (UniformIntProvider.create (8, 12), FabricBlockSettings.copyOf(Blocks.ANCIENT_DEBRIS).strength (5.5f, 30000).instrument(Instrument.IRON_XYLOPHONE).sounds(BlockSoundGroup.AMETHYST_BLOCK)));
     public static final Block DOMINITE_BLOCK = registerBlock ("dominite_block",
             new Block(FabricBlockSettings.copyOf(Blocks.GOLD_BLOCK).instrument(Instrument.CHIME).sounds (BlockSoundGroup.AMETHYST_BLOCK)));
     public static final Block YELLOW_MERANTI_PLANKS = registerBlock ("yellow_meranti_planks",
@@ -44,23 +52,23 @@ public class ModBlocks {
             new SlabBlock(FabricBlockSettings.copyOf(Blocks.JUNGLE_PLANKS).strength(7f).pistonBehavior (PistonBehavior.BLOCK).sounds (BlockSoundGroup.WOOD).burnable ()));
 
     public static final Block YELLOW_MERANTI_BUTTON = registerBlock ("yellow_meranti_button",
-            new ButtonBlock(FabricBlockSettings.copyOf(Blocks.JUNGLE_PLANKS).strength(7f).pistonBehavior (PistonBehavior.BLOCK).sounds (BlockSoundGroup.WOOD).burnable (), BlockSetType.JUNGLE, 20, true));
-    public static final SandBlock TRIDYMITE = (SandBlock) registerBlock ("tridymite",
-            new SandBlock(14406560, FabricBlockSettings.create().mapColor(MapColor.PALE_YELLOW).instrument(Instrument.SNARE).strength(0.5f).sounds(BlockSoundGroup.SAND)));
+            new ButtonBlock(BlockSetType.JUNGLE, 20, FabricBlockSettings.copyOf(Blocks.JUNGLE_PLANKS).strength(7f).pistonBehavior (PistonBehavior.BLOCK).sounds (BlockSoundGroup.WOOD).burnable ()));
+    public static final ColoredFallingBlock TRIDYMITE = (ColoredFallingBlock) registerBlock ("tridymite",
+            new ColoredFallingBlock (new ColorCode (14406560), FabricBlockSettings.create().mapColor(MapColor.PALE_YELLOW).instrument(Instrument.SNARE).strength(0.5f).sounds(BlockSoundGroup.SAND)));
     public static final Block YELLOW_MERANTI_PRESSURE_PLATE = registerBlock ("yellow_meranti_pressure_plate",
-            new PressurePlateBlock (PressurePlateBlock.ActivationRule.EVERYTHING,FabricBlockSettings.copyOf(Blocks.JUNGLE_PLANKS).strength(7f).pistonBehavior (PistonBehavior.BLOCK).sounds (BlockSoundGroup.WOOD).burnable (), BlockSetType.JUNGLE));
+            new PressurePlateBlock (BlockSetType.JUNGLE, FabricBlockSettings.copyOf(Blocks.JUNGLE_PLANKS).strength(7f).pistonBehavior (PistonBehavior.BLOCK).sounds (BlockSoundGroup.WOOD).burnable ()));
 
     public static final Block YELLOW_MERANTI_FENCE = registerBlock ("yellow_meranti_fence",
             new FenceBlock(FabricBlockSettings.copyOf(Blocks.JUNGLE_PLANKS).strength(7f).pistonBehavior (PistonBehavior.BLOCK).sounds (BlockSoundGroup.WOOD).burnable ()));
     public static final Block YELLOW_MERANTI_FENCE_GATE = registerBlock ("yellow_meranti_fence_gate",
-            new FenceGateBlock(FabricBlockSettings.copyOf(Blocks.JUNGLE_PLANKS).strength(7f).pistonBehavior (PistonBehavior.BLOCK).sounds (BlockSoundGroup.WOOD).burnable (), WoodType.JUNGLE));
+            new FenceGateBlock(WoodType.JUNGLE, FabricBlockSettings.copyOf(Blocks.JUNGLE_PLANKS).strength(7f).pistonBehavior (PistonBehavior.BLOCK).sounds (BlockSoundGroup.WOOD).burnable ()));
 
     public static final Block YELLOW_MERANTI_DOOR = registerBlock ("yellow_meranti_door",
-            new DoorBlock(FabricBlockSettings.copyOf(Blocks.JUNGLE_DOOR).strength(7f).pistonBehavior (PistonBehavior.BLOCK).sounds (BlockSoundGroup.WOOD).burnable (), BlockSetType.JUNGLE));
+            new DoorBlock(BlockSetType.JUNGLE, FabricBlockSettings.copyOf(Blocks.JUNGLE_DOOR).strength(7f).pistonBehavior (PistonBehavior.BLOCK).sounds (BlockSoundGroup.WOOD).burnable ()));
     public static final Block YELLOW_MERANTI_SAPLING = registerBlock ("yellow_meranti_sapling",
-            new SaplingBlock(new YellowMerantiSaplingGenerator(), FabricBlockSettings.copyOf (Blocks.JUNGLE_SAPLING)));
+            new SaplingBlock(ModSaplingGenerators.YELLOW_MERANTI, FabricBlockSettings.copyOf (Blocks.JUNGLE_SAPLING)));
     public static final Block FRACTURED_YELLOW_MERANTI_SAPLING = registerBlock ("fractured_yellow_meranti_sapling",
-            new SaplingBlock(new FracturedYellowMerantiSaplingGenerator (), FabricBlockSettings.copyOf (Blocks.JUNGLE_SAPLING)));
+            new SaplingBlock(ModSaplingGenerators.FRACTURED_YELLOW_MERANTI, FabricBlockSettings.copyOf (Blocks.JUNGLE_SAPLING)));
 
     public static final Block YELLOW_MERANTI_TRAPDOOR = registerBlock ("yellow_meranti_trapdoor",
             new Block(FabricBlockSettings.copyOf(Blocks.JUNGLE_PLANKS).strength(7f).sounds (BlockSoundGroup.WOOD).nonOpaque().burnable ()));

@@ -20,6 +20,7 @@ import java.util.List;
 public class ModPlacedFeatures {
     public static final RegistryKey<PlacedFeature> DOMINITE_ORE_PLACED_KEY = registryKey ("dominite_ore_placed");
     public static final RegistryKey<PlacedFeature> CHRODOMACH_ORE_PLACED_KEY = registryKey ("chrodomach_ore_placed");
+    public static final RegistryKey<PlacedFeature> ALUMINUM_ORE_PLACED_KEY = registryKey ("aluminum_ore_placed");
     public static final RegistryKey<PlacedFeature> YELLOW_MERANTI_PLACED_KEY = registryKey ("yellow_meranti_placed");
     public static final RegistryKey<PlacedFeature> FRACTURED_YELLOW_MERANTI_PLACED_KEY = registryKey ("fractured_yellow_meranti_placed");
 
@@ -32,6 +33,9 @@ public class ModPlacedFeatures {
         register(context, CHRODOMACH_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow (ModConfiguredFeatures.CHRODOMACH_ORE_KEY),
                 ModOrePlacementClass.modifiersWithCount (1,
                         HeightRangePlacementModifier.trapezoid (YOffset.fixed (-64), YOffset.fixed (-50))));
+        register(context, ALUMINUM_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow (ModConfiguredFeatures.CHRODOMACH_ORE_KEY),
+                ModOrePlacementClass.modifiersWithCount (6,
+                        HeightRangePlacementModifier.trapezoid (YOffset.fixed (5), YOffset.fixed (62))));
         register (context, YELLOW_MERANTI_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow (ModConfiguredFeatures.YELLOW_MERANTI_KEY),
                 VegetationPlacedFeatures.treeModifiersWithWouldSurvive (PlacedFeatures.createCountExtraModifier (3, 0.2f, 4),
                         ModBlocks.YELLOW_MERANTI_SAPLING));

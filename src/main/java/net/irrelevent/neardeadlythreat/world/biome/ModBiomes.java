@@ -1,8 +1,6 @@
 package net.irrelevent.neardeadlythreat.world.biome;
 
 
-import com.mojang.datafixers.kinds.IdF;
-import com.mojang.datafixers.util.Either;
 import net.irrelevent.neardeadlythreat.NearDeadlyThreat;
 import net.irrelevent.neardeadlythreat.entity.ModEntities;
 import net.minecraft.client.sound.MusicType;
@@ -11,12 +9,8 @@ import net.minecraft.entity.SpawnGroup;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
-import net.minecraft.registry.entry.RegistryEntry;
-import net.minecraft.registry.entry.RegistryEntryOwner;
-import net.minecraft.registry.tag.TagKey;
 import net.minecraft.sound.BiomeMoodSound;
 import net.minecraft.sound.MusicSound;
-import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Identifier;
 import net.minecraft.world.biome.*;
@@ -36,10 +30,17 @@ public class ModBiomes {
             new Identifier (NearDeadlyThreat.MOD_ID, "yellow_meranti_forest"));
     public static final RegistryKey<Biome> TRIDYMITE_BEACH = RegistryKey.of (RegistryKeys.BIOME,
             new Identifier (NearDeadlyThreat.MOD_ID, "tridymite_beach"));
+    public static final RegistryKey<Biome> FRACTURED_YELLOW_MERANTI_FOREST = RegistryKey.of (RegistryKeys.BIOME,
+            new Identifier (NearDeadlyThreat.MOD_ID, "fractured_yellow_meranti_forest"));
+    public static final RegistryKey<Biome> DESOLATE_OCEAN = RegistryKey.of (RegistryKeys.BIOME,
+            new Identifier (NearDeadlyThreat.MOD_ID, "desolate_ocean"));
+
 
     public static void bootstrap(Registerable<Biome> context) {
         context.register (YELLOW_MERANTI_FOREST, yellowMerantiForest (context));
+        context.register (FRACTURED_YELLOW_MERANTI_FOREST, fracturedYellowMerantiForest (context));
         context.register (TRIDYMITE_BEACH, tridymiteBeach (context));
+        context.register (DESOLATE_OCEAN, desolateOcean (context));
     }
 
 
@@ -98,6 +99,62 @@ public class ModBiomes {
                             .grassColor (0x78a27f)
                             .foliageColor (0x718307)
                             .fogColor (0x75b982)
+                            .moodSound (BiomeMoodSound.CAVE)
+                            .music (musicSound).build ())
+
+
+                    .build ();
+
+
+
+        }
+
+    }
+    public static Biome fracturedYellowMerantiForest(Registerable<Biome> context) {
+        SpawnSettings.Builder spawnBuilder = new SpawnSettings.Builder ();
+
+        spawnBuilder.spawn (SpawnGroup.CREATURE, new SpawnSettings.SpawnEntry (EntityType.WOLF, 5, 4, 4));
+
+        DefaultBiomeFeatures.addFarmAnimals (spawnBuilder);
+        DefaultBiomeFeatures.addBatsAndMonsters (spawnBuilder);
+        DefaultBiomeFeatures.addJungleMobs (spawnBuilder);
+
+        GenerationSettings.LookupBackedBuilder biomeBuilder =
+                new GenerationSettings.LookupBackedBuilder (context.getRegistryLookup (RegistryKeys.PLACED_FEATURE),
+                        context.getRegistryLookup (RegistryKeys.CONFIGURED_CARVER));
+
+        globalOverworldGeneration (biomeBuilder);
+        DefaultBiomeFeatures.addMossyRocks (biomeBuilder);
+        DefaultBiomeFeatures.addDefaultOres (biomeBuilder);
+        DefaultBiomeFeatures.addJungleGrass (biomeBuilder);
+        DefaultBiomeFeatures.addMangroveSwampFeatures (biomeBuilder);
+
+
+        biomeBuilder.feature (GenerationStep.Feature.VEGETAL_DECORATION, VegetationPlacedFeatures.TREES_PLAINS);
+        DefaultBiomeFeatures.addForestFlowers (biomeBuilder);
+        DefaultBiomeFeatures.addVines (biomeBuilder);
+        DefaultBiomeFeatures.addLargeFerns (biomeBuilder);
+
+        DefaultBiomeFeatures.addDefaultMushrooms (biomeBuilder);
+        DefaultBiomeFeatures.addDefaultVegetation (biomeBuilder);
+        MusicSound musicSound = MusicType.createIngameMusic (SoundEvents.AMBIENT_NETHER_WASTES_MOOD);
+        {
+
+
+            return new Biome.Builder ()
+                    .precipitation (true)
+                    .downfall (1.9f)
+                    .temperature (2.0f)
+                    .generationSettings (biomeBuilder.build ())
+                    .spawnSettings (spawnBuilder.build ())
+                    .effects ((new BiomeEffects.Builder ())
+                            .waterColor (0x7f8e72)
+                            .waterFogColor (0x0c343d)
+                            .skyColor (0x58634f)
+                            .grassColor (0x78a27f)
+                            .foliageColor (0x718307)
+                            .fogColor (0x75b982)
+                            .moodSound (BiomeMoodSound.CAVE)
                             .music (musicSound).build ())
 
 
@@ -128,6 +185,7 @@ public class ModBiomes {
 
         DefaultBiomeFeatures.addDefaultVegetation (biomeBuilder);
         MusicSound musicSound = MusicType.createIngameMusic (SoundEvents.MUSIC_OVERWORLD_DESERT);
+
         {
 
 
@@ -144,6 +202,7 @@ public class ModBiomes {
                             .grassColor (0x78a27f)
                             .foliageColor (0x718307)
                             .fogColor (0xa0bce5)
+                            .moodSound (BiomeMoodSound.CAVE)
                             .music (musicSound).build ())
 
 
@@ -153,4 +212,43 @@ public class ModBiomes {
         }
 
     }
+    public static Biome desolateOcean(Registerable<Biome> context) {
+        SpawnSettings.Builder spawnBuilder = new SpawnSettings.Builder ();
+
+
+
+        GenerationSettings.LookupBackedBuilder biomeBuilder =
+                new GenerationSettings.LookupBackedBuilder (context.getRegistryLookup (RegistryKeys.PLACED_FEATURE),
+                        context.getRegistryLookup (RegistryKeys.CONFIGURED_CARVER));
+
+        globalOverworldGeneration (biomeBuilder);
+
+        MusicSound musicSound = MusicType.createIngameMusic (SoundEvents.MUSIC_END);
+        {
+
+
+            return new Biome.Builder ()
+                    .precipitation (true)
+                    .downfall (2f)
+                    .temperature (-0.5f)
+                    .generationSettings (biomeBuilder.build ())
+                    .spawnSettings (spawnBuilder.build ())
+                    .effects ((new BiomeEffects.Builder ())
+                            .waterColor (0x010b13)
+                            .waterFogColor (0x000509)
+                            .skyColor (0x66a3ff)
+                            .grassColor (0x073763)
+                            .foliageColor (0x0f1f07)
+                            .fogColor (0x042645)
+                            .moodSound (BiomeMoodSound.CAVE)
+                            .music (musicSound).build ())
+
+
+                    .build ();
+
+
+        }
+
+    }
+
 }

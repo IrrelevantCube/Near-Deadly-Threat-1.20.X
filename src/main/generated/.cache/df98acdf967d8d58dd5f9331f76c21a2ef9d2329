@@ -1,7 +1,7 @@
-// 1.20.1	2024-06-11T18:22:16.2314822	Near Deadly Threat/Model Definitions
+// 1.20.2	2024-06-17T12:52:18.0212172	Near Deadly Threat/Model Definitions
 36bb14c1129b779701b370bafbd0867fb776e3ba assets\ndt\models\block\yellow_meranti_pressure_plate_down.json
-aa287f7da5c63cd6707505449679330a83e94096 assets\ndt\models\item\dominite_ore.json
 eaf0f6e55186a233c55dd52184d74d483395a45f assets\ndt\models\item\brachytus_steel_chestplate_lapis_trim.json
+aa287f7da5c63cd6707505449679330a83e94096 assets\ndt\models\item\dominite_ore.json
 f444c1a5b833c154485176047a3436058a6d0fd9 assets\ndt\models\item\yellow_meranti_button.json
 9a9ab3085f56bb16ebcd73f7059e3b63f838ffcf assets\ndt\blockstates\chrodomach_ore.json
 3b41e49b730ef27cc2a1cc227ed021ca6500b68d assets\ndt\blockstates\yellow_meranti_pressure_plate.json
@@ -16,8 +16,8 @@ a2f1090f6569230c5fefc29a880f715af00f370b assets\ndt\models\block\stripped_yellow
 690dc96c6678d4919ca8f0e80209a7bb862bb3d5 assets\ndt\models\item\tridymite.json
 b54536ddaa9e2042a712e5e4fc6af2142952bf93 assets\ndt\models\block\yellow_meranti_door_top_right.json
 355634ea0b49d2450c7d608d466aa44010ef6087 assets\ndt\models\item\brachytus_steel_boots_quartz_trim.json
-249a04eb9225c804c90aa23c2d28e9fab5c97bd5 assets\ndt\models\item\chrodomach_ore.json
 8db522b47e4d7bc2246e39ec86e1ce3bf3559bdc assets\ndt\models\item\brachytus_steel_chestplate_netherite_trim.json
+249a04eb9225c804c90aa23c2d28e9fab5c97bd5 assets\ndt\models\item\chrodomach_ore.json
 fc5c6ccde67755c4a72549581ca5149141d1cfbb assets\ndt\models\block\yellow_meranti_leaves.json
 5bed61b4225876aa5f7c550cb926e7894ac3335e assets\ndt\models\item\yellow_meranti_log.json
 6335861559a53e3a7e1cdc53d4a09f5582896513 assets\ndt\models\block\yellow_meranti_button.json
@@ -77,8 +77,8 @@ acf69aeb88e219c4c385c90aabf8b6ee74e33626 assets\ndt\models\block\yellow_meranti_
 2fb5f1428eced97bd3110fa6d5d04c846d46bf71 assets\ndt\models\item\brachytus_steel_helmet.json
 07f5bac7a431db7b3db87ab1568e3f550a79d156 assets\ndt\models\block\yellow_meranti_slab.json
 a0f7840bd382f082f771bf9916b2ba6b69513357 assets\ndt\models\block\yellow_meranti_door_bottom_left.json
-cc2db9d4dc8341502c4309f2c66e203db4de3e47 assets\ndt\models\block\chrodomach_ore.json
 1bdbcaf1713d79fc56f8e9430e6e077e17f84781 assets\ndt\models\item\brachytus_steel_leggings_amethyst_trim.json
+cc2db9d4dc8341502c4309f2c66e203db4de3e47 assets\ndt\models\block\chrodomach_ore.json
 880165487c39047f4f0b45ddce105caf7b684d45 assets\ndt\models\block\tridymite.json
 6f934dbfe9e6fc678741a89fc45fd6683d335f2a assets\ndt\models\item\brachytus_steel_chestplate_emerald_trim.json
 2e1b44f200b4b2f17429258826fc60cd4fd5ce61 assets\ndt\models\item\brachytus_steel_helmet_copper_trim.json
@@ -129,8 +129,8 @@ ce1114e45ceafbfc7a767483102c7635379caa5c assets\ndt\models\item\crab_legs.json
 63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets\ndt\models\item\brachymite_spawn_egg.json
 aa383d3ca7f37639677250c0bc507ee4ed48ef0f assets\ndt\models\item\brachytus_steel_leggings_quartz_trim.json
 32608cbc5806a5048da517cc0bbf0b77c987e2be assets\ndt\models\item\brachytus_steel_leggings_netherite_trim.json
-26be343ee50160cff8fb0197dccac7c9d078ffd9 assets\ndt\models\block\chrodomach_block.json
 6c626b6712405f4f5b085eaecf24c7dd5a725b16 assets\ndt\models\block\yellow_meranti_sapling.json
+26be343ee50160cff8fb0197dccac7c9d078ffd9 assets\ndt\models\block\chrodomach_block.json
 000c6d1b95d3c18f3744da7ff9edfedf031f1593 assets\ndt\blockstates\tridymite.json
 b9bf566e5644b73b4baa442f82d72b131acf88ed assets\ndt\models\item\brachytus_steel_boots.json
 abae7e5feff09de9b862ee1d416e0bf4fa4caa6b assets\ndt\blockstates\yellow_meranti_door.json

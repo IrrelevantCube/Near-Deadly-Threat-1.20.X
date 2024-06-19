@@ -51,7 +51,7 @@ public class FracturedYellowMerantiTrunkPlacer extends TrunkPlacer {
         int k = 0;
         boolean bl = (true);
         boolean bl3 = bl2 = k >= 2;
-        int l = bl ? height : (bl2 ? Math.max (i, j) + 1 : i + 1);
+        int l = bl ? height : (bl2 ? Math.max (i, j) + 1 : random (3, 7) + 1);
         for (int m = random (1, 9); m < l; ++m) {
             this.getAndSetState (world, replacer, random, startPos.up (m), config);
         }
@@ -67,23 +67,23 @@ public class FracturedYellowMerantiTrunkPlacer extends TrunkPlacer {
         if (bl2) {
             list.add (this.generateBranch (world, replacer, random, height, startPos, config, function, direction.getOpposite (), j, i < l - 1, mutable));
         }
-        for (int p = 4; p < height; ++p) {
+        for (int p = random (1, 9); p < height; ++p) {
             int y = startPos.getY () + p;
             if (this.getAndSetState (world, replacer, random, mutable.set (startPos.getX (), y, startPos.getZ ()), config) && p < height - 1 && random.nextFloat () < 5) {
                 direction = Direction.Type.HORIZONTAL.random (random);
                 int g = (p + 3);
-                int r = Math.max (0, g * 3 + 1);
-                int m = (3 * 3);
+                int r = Math.max (0, g * 3 + random (7, 9));
+                int m = (random(1, 9) * 3);
                 this.generateExtraBranch (world, replacer, random, height, config, list, mutable, y, direction, r, m);
             }
             if (p != height - 1) continue;
-            list.add (new FoliagePlacer.TreeNode (mutable.set (startPos.getX (), p + 1, startPos.getZ ()), 0, false));
+            list.add (new FoliagePlacer.TreeNode (mutable.set (startPos.getX (), p + random (4, 10), startPos.getZ ()), 0, false));
         }
         return list;
     }
 
     private int random(int i, int i1) {
-        return random(1, 4);
+        return 1;
     }
 
 
@@ -110,11 +110,11 @@ public class FracturedYellowMerantiTrunkPlacer extends TrunkPlacer {
         int m;
         Direction direction2;
         mutablePos.set(startPos).move(Direction.UP, branchStartOffset);
-        int i = height + 1 + 5;
+        int i = height + 1 + 5 * random (2, 4);
         boolean bl = branchBelowHeight || i < branchStartOffset;
         int j = 1 + (bl ? 1 : 0);
         BlockPos blockPos = startPos.offset(direction, j).up(i);
-        int k = bl ? 2 : 1;
+        int k = bl ? random (3, 9) : 1;
         for (int l = 0; l < k; ++l) {
             this.getAndSetState(world, replacer, random, mutablePos.move(direction), config, withAxisFunction);
         }

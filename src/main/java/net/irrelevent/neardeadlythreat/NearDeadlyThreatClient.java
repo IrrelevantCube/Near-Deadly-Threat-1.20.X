@@ -6,11 +6,7 @@ import net.fabricmc.fabric.api.client.rendering.v1.EntityModelLayerRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.irrelevent.neardeadlythreat.block.ModBlocks;
 import net.irrelevent.neardeadlythreat.entity.ModEntities;
-import net.irrelevent.neardeadlythreat.entity.client.BrachymiteModel;
-import net.irrelevent.neardeadlythreat.entity.client.BrachytusModel;
-import net.irrelevent.neardeadlythreat.entity.client.BrachytusRenderer;
-import net.irrelevent.neardeadlythreat.entity.client.BrachymiteRenderer;
-import net.irrelevent.neardeadlythreat.entity.client.ModModelLayers;
+import net.irrelevent.neardeadlythreat.entity.client.*;
 import net.minecraft.client.render.RenderLayer;
 
 public class NearDeadlyThreatClient implements ClientModInitializer {

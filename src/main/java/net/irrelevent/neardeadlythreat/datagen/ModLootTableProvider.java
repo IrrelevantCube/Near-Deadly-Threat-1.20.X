@@ -39,6 +39,10 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop (ModBlocks.CHRODOMACH_BLOCK);
         addDrop (ModBlocks.DOMINITE_BLOCK);
 
+        addDrop (ModBlocks.IRON_II_ALUMINATE);
+        addDrop (ModBlocks.RAW_ALUMINUM_BLOCK);
+        addDrop (ModBlocks.ALUMINUM_BLOCK);
+
         addDrop (ModBlocks.YELLOW_MERANTI_LOG);
         addDrop (ModBlocks.YELLOW_MERANTI_WOOD);
         addDrop (ModBlocks.STRIPPED_YELLOW_MERANTI_LOG);
@@ -63,6 +67,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.YELLOW_MERANTI_LEAVES, leavesDrops (ModBlocks.YELLOW_MERANTI_LEAVES, ModBlocks.FRACTURED_YELLOW_MERANTI_SAPLING, 0.00005f));
 
         addDrop (ModBlocks.DOMINITE_ORE, copperLikeOreDrops(ModBlocks.DOMINITE_ORE, ModItems.DOMINITE));
+        addDrop (ModBlocks.ALUMINUM_ORE, copperLikeOreDrops (ModBlocks.ALUMINUM_ORE, ModItems.RAW_ALUMINUM));
         addDrop (ModBlocks.CHRODOMACH_ORE, copperLikeOreDrops(ModBlocks.CHRODOMACH_ORE, ModItems.RAW_CHRODOMACH));
 
         addDrop (ModBlocks.TRIDYMITE, copperLikeOreDrops (ModBlocks.TRIDYMITE, ModItems.TRIDYMITE_DUST));

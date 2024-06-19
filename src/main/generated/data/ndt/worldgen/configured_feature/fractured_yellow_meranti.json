@@ -10,9 +10,9 @@
     },
     "foliage_placer": {
       "type": "minecraft:blob_foliage_placer",
-      "height": 3,
+      "height": 4,
       "offset": 4,
-      "radius": 6
+      "radius": 1
     },
     "foliage_provider": {
       "type": "minecraft:simple_state_provider",
@@ -34,7 +34,7 @@
       "middle_size": 3,
       "min_clipped_height": 3,
       "upper_limit": 3,
-      "upper_size": 6
+      "upper_size": 1
     },
     "trunk_placer": {
       "type": "minecraft:fractured_yellow_meranti_trunk_placer",

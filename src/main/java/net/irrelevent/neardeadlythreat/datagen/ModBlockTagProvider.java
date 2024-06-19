@@ -23,7 +23,10 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider{
                 .add (ModBlocks.DOMINITE_BLOCK)
                 .add (ModBlocks.CHRODOMACH_BLOCK)
                 .add (ModBlocks.DOMINITE_ORE)
-                .add (ModBlocks.CHRODOMACH_ORE);
+                .add (ModBlocks.CHRODOMACH_ORE)
+                .add (ModBlocks.ALUMINUM_BLOCK)
+                .add (ModBlocks.RAW_ALUMINUM_BLOCK)
+                .add (ModBlocks.ALUMINUM_ORE);
         getOrCreateTagBuilder (TagKey.of (RegistryKeys.BLOCK, new Identifier ("fabric", "needs_tool_level_4")))
                 .add(ModBlocks.CHRODOMACH_BLOCK)
                 .add(ModBlocks.DOMINITE_BLOCK)

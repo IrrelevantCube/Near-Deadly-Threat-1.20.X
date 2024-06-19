@@ -6,6 +6,7 @@ import net.irrelevent.neardeadlythreat.datagen.*;
 import net.irrelevent.neardeadlythreat.world.ModConfiguredFeatures;
 import net.irrelevent.neardeadlythreat.world.ModPlacedFeatures;
 import net.irrelevent.neardeadlythreat.world.biome.ModBiomes;
+import net.irrelevent.neardeadlythreat.world.dimension.ModDimensions;
 import net.minecraft.registry.RegistryBuilder;
 import net.minecraft.registry.RegistryKeys;
 
@@ -27,5 +28,6 @@ public class NearDeadlyThreatDataGenerator implements DataGeneratorEntrypoint {
 		registryBuilder.addRegistry (RegistryKeys.CONFIGURED_FEATURE, ModConfiguredFeatures::bootstrap);
 		registryBuilder.addRegistry (RegistryKeys.PLACED_FEATURE, ModPlacedFeatures::bootstrap);
 		registryBuilder.addRegistry (RegistryKeys.BIOME, ModBiomes::bootstrap);
+		registryBuilder.addRegistry (RegistryKeys.DIMENSION_TYPE, ModDimensions::bootstrapType);
 	}
 }

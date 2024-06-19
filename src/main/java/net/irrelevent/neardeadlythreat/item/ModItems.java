@@ -15,6 +15,8 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
     public static final Item DOMINITE = registerItem ("dominite", new Item(new FabricItemSettings()));
+    public static final Item ALUMINUM_INGOT = registerItem ("aluminum_ingot", new Item(new FabricItemSettings()));
+    public static final Item RAW_ALUMINUM = registerItem ("raw_aluminum", new Item(new FabricItemSettings()));
     public static final Item REFINED_DOMINITE = registerItem ("refined_dominite", new Item(new FabricItemSettings()));
     public static final Item DOMINITE_ISOTOPE = registerItem ("dominite_isotope", new Item(new FabricItemSettings()));
     public static final Item RAW_CHRODOMACH = registerItem ("raw_chrodomach", new Item(new FabricItemSettings ()));

@@ -82,6 +82,7 @@ public class BrachytusEntity extends SpellcastingAnimalEntity {
         this.goalSelector.add (4, new WanderAroundGoal (this, 1.0));
         this.goalSelector.add (1, new StopAndLookAtEntityGoal (this, MobEntity.class, 8.0f));
         this.goalSelector.add (2, new LookAroundGoal (this));
+        this.goalSelector.add (3, new MeleeAttackGoal (this, 1, true));
         this.goalSelector.add (5, new BrachytusAttackGoal (this, 1d, true));
         this.goalSelector.add (4, new PounceAtTargetGoal (this, 0.6f));
         this.goalSelector.add(7, new SummonVexGoal ());
@@ -224,7 +225,7 @@ public class BrachytusEntity extends SpellcastingAnimalEntity {
                 break;
             } while ((blockPos = blockPos.down()).getY() >= MathHelper.floor(maxY) - 1);
             if (bl) {
-                BrachytusEntity.this.getWorld().spawnEntity(new EvokerFangsEntity(BrachytusEntity.this.getWorld(), x, (double)blockPos.getY() + d, z, yaw, warmup, BrachytusEntity.this));
+                BrachytusEntity.this.getWorld().spawnEntity(new EvokerFangsEntity (BrachytusEntity.this.getWorld(), x, (double)blockPos.getY() + d, z, yaw, warmup, BrachytusEntity.this));
             }
 
 

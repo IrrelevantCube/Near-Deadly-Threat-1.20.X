@@ -1,7 +1,7 @@
 {
   "type": "minecraft:blasting",
   "category": "misc",
-  "cookingtime": 450000,
+  "cookingtime": 1000,
   "experience": 0.75,
   "group": "dominite",
   "ingredient": {

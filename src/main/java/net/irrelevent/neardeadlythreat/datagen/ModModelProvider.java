@@ -25,6 +25,10 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll (ModBlocks.DOMINITE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll (ModBlocks.CHRODOMACH_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll (ModBlocks.TRIDYMITE);
+        blockStateModelGenerator.registerSimpleCubeAll (ModBlocks.ALUMINUM_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll (ModBlocks.ALUMINUM_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll (ModBlocks.RAW_ALUMINUM_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll (ModBlocks.IRON_II_ALUMINATE);
 
         blockStateModelGenerator.registerLog(ModBlocks.YELLOW_MERANTI_LOG).log(ModBlocks.YELLOW_MERANTI_LOG).wood(ModBlocks.YELLOW_MERANTI_WOOD);
         blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_YELLOW_MERANTI_LOG).log(ModBlocks.STRIPPED_YELLOW_MERANTI_LOG).wood(ModBlocks.STRIPPED_YELLOW_MERANTI_WOOD);
@@ -48,6 +52,8 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register (ModItems.DOMINITE, Models.GENERATED);
+        itemModelGenerator.register (ModItems.ALUMINUM_INGOT, Models.GENERATED);
+        itemModelGenerator.register (ModItems.RAW_ALUMINUM, Models.GENERATED);
         itemModelGenerator.register (ModItems.TRIDYMITE_DUST, Models.GENERATED);
         itemModelGenerator.register (ModItems.REFINED_DOMINITE, Models.GENERATED);
         itemModelGenerator.register (ModItems.CRAB_LEGS, Models.GENERATED);

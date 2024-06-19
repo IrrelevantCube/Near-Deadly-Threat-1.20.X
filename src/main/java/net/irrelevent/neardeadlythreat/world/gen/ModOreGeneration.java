@@ -11,5 +11,7 @@ public class ModOreGeneration {
                 GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.DOMINITE_ORE_PLACED_KEY);
         BiomeModifications.addFeature (BiomeSelectors.foundInOverworld (),
                 GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.CHRODOMACH_ORE_PLACED_KEY);
+        BiomeModifications.addFeature (BiomeSelectors.foundInOverworld (),
+                GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.ALUMINUM_ORE_PLACED_KEY);
     }
 }

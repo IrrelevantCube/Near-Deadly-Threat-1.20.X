@@ -22,8 +22,8 @@
   },
   "requirements": [
     [
-      "has_refined_dominite",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_refined_dominite"
     ]
   ],
   "rewards": {

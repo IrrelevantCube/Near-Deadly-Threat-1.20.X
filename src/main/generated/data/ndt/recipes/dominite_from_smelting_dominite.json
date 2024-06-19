@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smelting",
   "category": "misc",
-  "cookingtime": 500000,
+  "cookingtime": 2400,
   "experience": 0.7,
   "group": "dominite",
   "ingredient": {

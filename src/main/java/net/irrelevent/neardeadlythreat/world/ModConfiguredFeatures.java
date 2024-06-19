@@ -28,6 +28,7 @@ import java.util.OptionalInt;
 public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> DOMINITE_ORE_KEY = registryKey ("dominite_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> CHRODOMACH_ORE_KEY = registryKey ("chrodomach_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> ALUMINUM_ORE_KEY = registryKey ("aluminum_ore");
 
 
     public static final RegistryKey<ConfiguredFeature<?, ?>> YELLOW_MERANTI_KEY = registryKey("yellow_meranti");
@@ -43,9 +44,12 @@ public class ModConfiguredFeatures {
         List<OreFeatureConfig.Target> overworldChrodomachOres =
                 List.of(OreFeatureConfig.createTarget (stoneReplacables, ModBlocks.CHRODOMACH_ORE.getDefaultState ()),
                         OreFeatureConfig.createTarget(deepslateReplacables, ModBlocks.CHRODOMACH_ORE.getDefaultState ()));
+        List<OreFeatureConfig.Target> overworldAluminumOres =
+                List.of(OreFeatureConfig.createTarget (stoneReplacables, ModBlocks.DOMINITE_ORE.getDefaultState ()));
 
 
         register (context, DOMINITE_ORE_KEY, Feature.ORE, new OreFeatureConfig (overworldDominiteOres, 3));
+        register (context, ALUMINUM_ORE_KEY, Feature.ORE, new OreFeatureConfig (overworldAluminumOres, 7));
         register (context, CHRODOMACH_ORE_KEY, Feature.ORE, new OreFeatureConfig (overworldChrodomachOres, 1));
 
         register (context, YELLOW_MERANTI_KEY, Feature.TREE, new TreeFeatureConfig.Builder (

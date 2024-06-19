@@ -4,29 +4,42 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.irrelevent.neardeadlythreat.block.ModBlocks;
 import net.irrelevent.neardeadlythreat.item.ModItems;
-import net.minecraft.data.server.recipe.RecipeJsonProvider;
+import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemConvertible;
+import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.util.Identifier;
 
 import java.util.List;
-import java.util.function.Consumer;
 
 public class ModRecipeProvider extends FabricRecipeProvider {
     private static final List<ItemConvertible> DOMINITE_SMELTABLES = List.of(ModItems.DOMINITE);
+    private static final List<ItemConvertible> RAW_ALUMINUM_SMELTABLES = List.of(ModItems.RAW_ALUMINUM);
+    private static final List<ItemConvertible> RAW_ALUMINUM_BLOCK_SMELTABLES = List.of(ModBlocks.RAW_ALUMINUM_BLOCK);
 
     public ModRecipeProvider(FabricDataOutput output) {
         super (output);
     }
 
     @Override
-    public void generate(Consumer<RecipeJsonProvider> exporter) {
+    public void generate(RecipeExporter exporter) {
         offerSmelting (exporter, DOMINITE_SMELTABLES, RecipeCategory.MISC, ModItems.DOMINITE,
                 0.7f, 500000, "dominite");
         offerBlasting (exporter, DOMINITE_SMELTABLES, RecipeCategory.MISC, ModItems.DOMINITE,
                 0.75f, 450000, "dominite");
+
+        offerSmelting (exporter, RAW_ALUMINUM_SMELTABLES, RecipeCategory.MISC, ModItems.ALUMINUM_INGOT,
+                0.5f, 35000, "aluminum_ingot");
+        offerSmelting (exporter, RAW_ALUMINUM_BLOCK_SMELTABLES, RecipeCategory.MISC, ModBlocks.ALUMINUM_BLOCK,
+                0.5f, 35000, "aluminum_block");
+        offerBlasting (exporter, RAW_ALUMINUM_SMELTABLES, RecipeCategory.MISC, ModItems.ALUMINUM_INGOT,
+                0.6f, 25000, "aluminum_ingot");
+        offerBlasting (exporter, RAW_ALUMINUM_BLOCK_SMELTABLES, RecipeCategory.MISC, ModBlocks.ALUMINUM_BLOCK,
+                0.6f, 25000, "aluminum_block");
+
 
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.DOMINITE, 3)
@@ -48,6 +61,32 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input ('r', ModItems.REFINED_DOMINITE)
                 .criterion (hasItem (ModItems.REFINED_DOMINITE), conditionsFromItem (ModItems.REFINED_DOMINITE))
                 .offerTo (exporter, new Identifier (getRecipeName (ModBlocks.DOMINITE_ORE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.IRON_II_ALUMINATE, 1)
+                .pattern("aaa")
+                .pattern("iii")
+                .pattern("aaa")
+                .input ('a', ModItems.ALUMINUM_INGOT)
+                .input ('i', Items.IRON_INGOT)
+                .criterion (hasItem (ModItems.ALUMINUM_INGOT), conditionsFromItem (ModItems.ALUMINUM_INGOT))
+                .criterion (hasItem (Items.IRON_INGOT), conditionsFromItem (Items.IRON_INGOT))
+                .offerTo (exporter, new Identifier (getRecipeName (ModBlocks.IRON_II_ALUMINATE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ALUMINUM_BLOCK, 1)
+                .pattern("aaa")
+                .pattern("aaa")
+                .pattern("aaa")
+                .input ('a', ModItems.ALUMINUM_INGOT)
+                .criterion (hasItem (ModItems.ALUMINUM_INGOT), conditionsFromItem (ModItems.ALUMINUM_INGOT))
+                .offerTo (exporter, new Identifier (getRecipeName (ModBlocks.ALUMINUM_BLOCK)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RAW_ALUMINUM_BLOCK, 1)
+                .pattern(" r ")
+                .pattern("r r")
+                .pattern(" r ")
+                .input ('r', ModItems.RAW_ALUMINUM)
+                .criterion (hasItem (ModItems.RAW_ALUMINUM), conditionsFromItem (ModItems.RAW_ALUMINUM))
+                .offerTo (exporter, new Identifier (getRecipeName (ModBlocks.RAW_ALUMINUM_BLOCK)));
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.YELLOW_MERANTI_PLANKS, 4)
                 .criterion (hasItem(ModBlocks.YELLOW_MERANTI_LOG), conditionsFromItem (ModBlocks.YELLOW_MERANTI_LOG))
