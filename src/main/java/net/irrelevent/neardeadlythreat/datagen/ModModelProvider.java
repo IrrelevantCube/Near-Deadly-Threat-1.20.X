@@ -70,5 +70,10 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor ((ArmorItem) ModItems.BRACHYTUS_STEEL_CHESTPLATE);
         itemModelGenerator.registerArmor ((ArmorItem) ModItems.BRACHYTUS_STEEL_BOOTS);
 
+        itemModelGenerator.registerArmor ((ArmorItem) ModItems.ALUMINATE_HELMET);
+        itemModelGenerator.registerArmor ((ArmorItem) ModItems.ALUMINATE_LEGGINGS);
+        itemModelGenerator.registerArmor ((ArmorItem) ModItems.ALUMINATE_CHESTPLATE);
+        itemModelGenerator.registerArmor ((ArmorItem) ModItems.ALUMINATE_BOOTS);
+
     }
 }

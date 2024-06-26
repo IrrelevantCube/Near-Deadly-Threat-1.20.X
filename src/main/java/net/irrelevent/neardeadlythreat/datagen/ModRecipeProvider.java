@@ -134,6 +134,40 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo (exporter, new Identifier (getRecipeName (ModItems.BRACHYTUS_STEEL_BOOTS)));
 
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.ALUMINATE_HELMET, 1)
+                .pattern("iai")
+                .pattern("a a")
+                .pattern("   ")
+                .input ('a', ModItems.BRACHYTUS_STEEL)
+                .input ('i', Items.IRON_INGOT)
+                .criterion (hasItem (ModItems.ALUMINUM_INGOT), conditionsFromItem (ModItems.ALUMINUM_INGOT))
+                .offerTo (exporter, new Identifier (getRecipeName (ModItems.ALUMINATE_HELMET)));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.ALUMINATE_LEGGINGS, 1)
+                .pattern("iai")
+                .pattern("a a")
+                .pattern("i i")
+                .input ('a', ModItems.BRACHYTUS_STEEL)
+                .input ('i', Items.IRON_INGOT)
+                .criterion (hasItem (ModItems.ALUMINUM_INGOT), conditionsFromItem (ModItems.ALUMINUM_INGOT))
+                .offerTo (exporter, new Identifier (getRecipeName (ModItems.ALUMINATE_LEGGINGS)));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.ALUMINATE_CHESTPLATE, 1)
+                .pattern("i i")
+                .pattern("aia")
+                .pattern("iai")
+                .input ('a', ModItems.BRACHYTUS_STEEL)
+                .input ('i', Items.IRON_INGOT)
+                .criterion (hasItem (ModItems.ALUMINUM_INGOT), conditionsFromItem (ModItems.ALUMINUM_INGOT))
+                .offerTo (exporter, new Identifier (getRecipeName (ModItems.ALUMINATE_CHESTPLATE)));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.ALUMINATE_BOOTS, 1)
+                .pattern("   ")
+                .pattern("a a")
+                .pattern("i i")
+                .input ('a', ModItems.BRACHYTUS_STEEL)
+                .input ('i', Items.IRON_INGOT)
+                .criterion (hasItem (ModItems.ALUMINUM_INGOT), conditionsFromItem (ModItems.ALUMINUM_INGOT))
+                .offerTo (exporter, new Identifier (getRecipeName (ModItems.ALUMINATE_BOOTS)));
+
+
 
 
         }
