@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "a": {
+      "item": "ndt:aluminum_ingot"
+    },
+    "i": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "pattern": [
+    "aaa",
+    "iii",
+    "aaa"
+  ],
+  "result": {
+    "item": "ndt:iron_ii_aluminate"
+  }
+}

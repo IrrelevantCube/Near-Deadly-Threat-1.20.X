@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "ndt:block/iron_ii_aluminate"
+  }
+}

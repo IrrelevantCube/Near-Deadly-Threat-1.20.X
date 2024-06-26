@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "r": {
+      "item": "ndt:raw_aluminum"
+    }
+  },
+  "pattern": [
+    " r ",
+    "r r",
+    " r "
+  ],
+  "result": {
+    "item": "ndt:raw_aluminum_block"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "cookingtime": 35000,
+  "experience": 0.5,
+  "group": "aluminum_block",
+  "ingredient": {
+    "item": "ndt:raw_aluminum_block"
+  },
+  "result": "ndt:aluminum_block"
+}

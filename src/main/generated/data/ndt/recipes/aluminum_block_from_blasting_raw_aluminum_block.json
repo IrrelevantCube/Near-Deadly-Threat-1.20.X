@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "blocks",
+  "cookingtime": 25000,
+  "experience": 0.6,
+  "group": "aluminum_block",
+  "ingredient": {
+    "item": "ndt:raw_aluminum_block"
+  },
+  "result": "ndt:aluminum_block"
+}
