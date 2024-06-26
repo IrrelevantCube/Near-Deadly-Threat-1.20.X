@@ -69,6 +69,5 @@
     "recipes": [
       "minecraft:yellow_meranti_planks"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

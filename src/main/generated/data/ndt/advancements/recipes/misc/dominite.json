@@ -30,6 +30,5 @@
     "recipes": [
       "minecraft:dominite"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

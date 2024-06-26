@@ -1,0 +1,15 @@
+{
+  "name": "Ammonium Nitrate Launcher",
+  "icon": "minecraft:writable_book",
+  "category": "ndt:misc_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "PLEASE MAINTAIN 42-48 BLOCK CLEARANCE FOR ACTIVE LAUNCH-PREPARATIONS"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "The Brachymite Chestplate is the strongest part of this armor, it has a strength of 20 whereas the others have a strength of less than 5"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "Brachytus Steel Armor",
+  "icon": "minecraft:writable_book",
+  "category": "ndt:misc_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Brachytus Steel Armor"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:armor_stand{ArmorItems:[{id:brachytus_steel_boots,Count:1},{id:brachytus_steel_leggings,Count:1},{id:brachytus_steel_chestplate,Count:1},{id:brachytus_steel_helmet,Count:1}]}",
+      "scale": "1.0",
+      "rotate": "true",
+      "name": "Brachytus Steel Armor",
+      "text": "Tough armor relying on the strength of the chestpiece, the strongest in the game so far. However, you can't say the same with the other pieces."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "ndt:brachytus_steel_chestplate"
+      }
+    },
+    {
+      "type": "patchouli:text",
+      "text": "The Brachymite Chestplate is the strongest part of this armor, it has a strength of 20 whereas the others have a strength of less than 5"
+    }
+  ]
+}

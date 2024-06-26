@@ -5,7 +5,14 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "This is a test entry, but it should show up!"
+      "text": "Brachymites are small weak creatures that you can kill in 2 hits without a sword, but they are only a mere distraction for something bigger . . ."
+    },
+    {
+      "type": "patchouli:image",
+      "images": ["ndt:textures/book_pictures/brachymite_candid.png", "ndt:textures/book_pictures/brachymite_stage.png"],
+      "title": "Brachymite",
+      "border": "true",
+      "text": "The Brachymite has features similar to crabs"
     }
   ]
 }

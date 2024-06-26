@@ -4,6 +4,9 @@
     "ndt:dominite_block",
     "ndt:chrodomach_block",
     "ndt:dominite_ore",
-    "ndt:chrodomach_ore"
+    "ndt:chrodomach_ore",
+    "ndt:aluminum_block",
+    "ndt:raw_aluminum_block",
+    "ndt:aluminum_ore"
   ]
 }

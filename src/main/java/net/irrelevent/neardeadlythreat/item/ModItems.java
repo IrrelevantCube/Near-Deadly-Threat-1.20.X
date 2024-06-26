@@ -25,7 +25,6 @@ public class ModItems {
     public static final Item BRACHYTUS_SHELL = registerItem ("brachytus_shell", new Item(new FabricItemSettings ()));
     public static final Item BRACHYTUS_STEEL = registerItem ("brachytus_steel", new Item(new FabricItemSettings ()));
 
-    public static final Item MCLOCK = registerItem ("mclock", new Item(new FabricItemSettings ()));
 
     public static final Item CRAB_LEGS = registerItem ("crab_legs", new Item(new FabricItemSettings().food(ModFoodComponents.CRAB_LEGS)));
     public static final Item COOKED_CRAB_LEGS = registerItem ("cooked_crab_legs", new Item(new FabricItemSettings().food(ModFoodComponents.COOKED_CRAB_LEGS)));

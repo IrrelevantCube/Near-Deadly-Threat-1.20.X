@@ -10,8 +10,8 @@ import net.minecraft.sound.SoundEvents;
 import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
-    BRACHYTUS_STEEL("brachytus_steel", 30, new int[] {2, 15, 5, 1}, 20,
-            SoundEvents.ITEM_ARMOR_EQUIP_TURTLE, 5f, 0.5f, () -> Ingredient.ofItems (ModItems.BRACHYTUS_STEEL))
+    BRACHYTUS_STEEL("brachytus_steel", 30, new int[] {2, 20, 5, 1}, 20,
+            SoundEvents.ITEM_ARMOR_EQUIP_TURTLE, 5f, 1.0f, () -> Ingredient.ofItems (ModItems.BRACHYTUS_STEEL))
     ;
 
     private final String name;

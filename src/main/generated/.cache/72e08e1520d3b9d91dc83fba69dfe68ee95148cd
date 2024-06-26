@@ -1,14 +1,16 @@
-// 1.20.2	2024-06-17T12:52:18.0291919	Near Deadly Threat/World Gen
+// 1.20.4	2024-06-19T13:21:06.8936384	Near Deadly Threat/World Gen
 3a146189850d36a9fbf70cf1f6c8427909ddc789 data\ndt\worldgen\configured_feature\yellow_meranti.json
 ccf1270d79426094dc1a7c75bc0ba23dd5807a5f data\ndt\worldgen\biome\fractured_yellow_meranti_forest.json
 e74065da23a5ed7ac1123684ccd9513a4a6561da data\ndt\worldgen\placed_feature\chrodomach_ore_placed.json
 9249b74eaaecc50996cf0d7051bc3fe908262581 data\ndt\dimension_type\tenebrion_dim_type.json
 3b386b5276c2491d09a86aecc4e473faf6f7cdcf data\ndt\worldgen\biome\tridymite_beach.json
 c9a3b419e6b5664ee23aef6039e327270cc12704 data\ndt\worldgen\configured_feature\fractured_yellow_meranti.json
-d4a8e0f8625b9a81d2eb529e1aa5c2bdc28357ca data\ndt\worldgen\configured_feature\dominite_ore.json
 60d09e82fa75ea355a8fa8b74754a3abef7d6bf4 data\ndt\worldgen\placed_feature\fractured_yellow_meranti_placed.json
+d4a8e0f8625b9a81d2eb529e1aa5c2bdc28357ca data\ndt\worldgen\configured_feature\dominite_ore.json
+d1e3d5d6fc8ce8cfd027a23bea9f21900fae90d8 data\ndt\worldgen\placed_feature\aluminum_ore_placed.json
 1c38ca8dcd4a67ae7ecfca5d38dd9abf2245e502 data\ndt\worldgen\placed_feature\yellow_meranti_placed.json
 551390dcb152296d6d4370bb4abf8a47ed0cb79a data\ndt\worldgen\biome\desolate_ocean.json
 dde3b37412c5344687b55593c635f5fd78598c3c data\ndt\worldgen\configured_feature\chrodomach_ore.json
 e09509daa18bef13416682efe9d0dadf8bbb1391 data\ndt\worldgen\placed_feature\dominite_ore_placed.json
+97858a99c4e43f4db27bc746095781de17c1dac4 data\ndt\worldgen\configured_feature\aluminum_ore.json
 25dbf5ffbbbc561da4d75173b881a97b1a7ccf41 data\ndt\worldgen\biome\yellow_meranti_forest.json

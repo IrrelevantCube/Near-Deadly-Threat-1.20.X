@@ -1,0 +1,74 @@
+{
+  "parent": "ndt:adventure/peak_physical_form_my_carapace",
+  "criteria": {
+    "brachytus_steel_boots": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "ndt:brachytus_steel_boots"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "brachytus_steel_chestplate": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "ndt:brachytus_steel_chestplate"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "brachytus_steel_helmet": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "ndt:brachytus_steel_leggings"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "brachytus_steel_leggings": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "ndt:brachytus_steel_helmet"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.adventure.true_peak_physical_form.description"
+    },
+    "icon": {
+      "item": "ndt:brachytus_steel_chestplate",
+      "nbt": "{Damage:0}"
+    },
+    "title": {
+      "translate": "advancements.adventure.true_peak_physical_form.title"
+    }
+  },
+  "requirements": [
+    [
+      "ndt:brachytus_steel_boots",
+      "ndt:brachytus_steel_chestplate",
+      "ndt:brachytus_steel_leggings",
+      "ndt:brachytus_steel_helmet"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

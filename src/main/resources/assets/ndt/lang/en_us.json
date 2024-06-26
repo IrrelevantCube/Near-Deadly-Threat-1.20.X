@@ -22,6 +22,9 @@
   "item.ndt.brachytus_steel_leggings": "Brachytus Steel Leggings",
   "item.ndt.brachytus_steel_boots": "Brachytus Steel Boots",
 
+  "item.ndt.aluminum_ingot": "Aluminum Ingot",
+  "item.ndt.raw_aluminum": "Raw Aluminum",
+
 
 
   "item.ndt.modified_clock": "Modified Clock",
@@ -30,6 +33,13 @@
   "block.ndt.chrodomach_ore": "Chrodomach Ore",
   "block.ndt.dominite_block": "Block of Dominite",
   "block.ndt.chrodomach_block": "Block of Chrodomach",
+
+  "block.ndt.aluminum_ore": "Aluminum Ore",
+  "block.ndt.aluminum_block": "Block of Aluminum",
+  "block.ndt.raw_aluminum_block": "Block of Raw Aluminum",
+  "block.ndt.iron_ii_aluminate": "Iron (II) Aluminate",
+
+  "block.ndt.ammonium_nitrate_explosive": "Ammonium Nitrate Explosive",
 
   "block.ndt.yellow_meranti_log": "Yellow Meranti Log",
   "block.ndt.yellow_meranti_leaves": "Yellow Meranti Leaves",

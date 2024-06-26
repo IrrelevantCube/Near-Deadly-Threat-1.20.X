@@ -15,16 +15,23 @@ public class ModItemGroups {
             FabricItemGroup.builder ().displayName (Text.translatable ("itemgroup.miscll"))
                     .icon(() -> new ItemStack (ModItems.REFINED_DOMINITE)).entries ((displayContext, entries) -> {
                     entries.add(ModItems.DOMINITE);
+                    entries.add(ModItems.ALUMINUM_INGOT);
+                    entries.add(ModItems.RAW_ALUMINUM);
                     entries.add(ModItems.DOMINITE_ISOTOPE);
                     entries.add(ModItems.REFINED_DOMINITE);
                     entries.add(ModItems.RAW_CHRODOMACH);
                     entries.add(ModItems.REFINED_CHRODOMACH);
-                    entries.add(ModItems.MCLOCK);
+
+                    entries.add(ModBlocks.AMMONIUM_NITRATE);
 
                     entries.add(ModItems.BRACHYTUS_SPAWN_EGG);
                     entries.add(ModItems.BRACHYMITE_SPAWN_EGG);
 
                     entries.add(ModBlocks.DOMINITE_ORE);
+                    entries.add(ModBlocks.ALUMINUM_BLOCK);
+                    entries.add(ModBlocks.ALUMINUM_ORE);
+                    entries.add(ModBlocks.IRON_II_ALUMINATE);
+                    entries.add(ModBlocks.RAW_ALUMINUM_BLOCK);
                     entries.add(ModBlocks.TRIDYMITE);
                     entries.add(ModBlocks.CHRODOMACH_ORE);
                     entries.add(ModBlocks.DOMINITE_BLOCK);

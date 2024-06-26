@@ -30,6 +30,5 @@
     "recipes": [
       "minecraft:brachytus_steel_leggings"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

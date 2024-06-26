@@ -33,9 +33,9 @@ public class ModPlacedFeatures {
         register(context, CHRODOMACH_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow (ModConfiguredFeatures.CHRODOMACH_ORE_KEY),
                 ModOrePlacementClass.modifiersWithCount (1,
                         HeightRangePlacementModifier.trapezoid (YOffset.fixed (-64), YOffset.fixed (-50))));
-        register(context, ALUMINUM_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow (ModConfiguredFeatures.CHRODOMACH_ORE_KEY),
+        register(context, ALUMINUM_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow (ModConfiguredFeatures.ALUMINUM_ORE_KEY),
                 ModOrePlacementClass.modifiersWithCount (6,
-                        HeightRangePlacementModifier.trapezoid (YOffset.fixed (5), YOffset.fixed (62))));
+                        HeightRangePlacementModifier.trapezoid (YOffset.fixed (5), YOffset.fixed (82))));
         register (context, YELLOW_MERANTI_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow (ModConfiguredFeatures.YELLOW_MERANTI_KEY),
                 VegetationPlacedFeatures.treeModifiersWithWouldSurvive (PlacedFeatures.createCountExtraModifier (3, 0.2f, 4),
                         ModBlocks.YELLOW_MERANTI_SAPLING));

@@ -2,6 +2,7 @@ package net.irrelevent.neardeadlythreat.entity;
 
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
 import net.irrelevent.neardeadlythreat.NearDeadlyThreat;
+import net.irrelevent.neardeadlythreat.entity.custom.AmmoniumNitrateEntity;
 import net.irrelevent.neardeadlythreat.entity.custom.BrachymiteEntity;
 import net.irrelevent.neardeadlythreat.entity.custom.BrachytusEntity;
 import net.minecraft.entity.EntityDimensions;
@@ -18,5 +19,6 @@ public class ModEntities {
         public static final EntityType<BrachymiteEntity>  BRACHYMITE = Registry.register (Registries.ENTITY_TYPE,
                 new Identifier (NearDeadlyThreat.MOD_ID, "brachymite"),
                 FabricEntityTypeBuilder.create (SpawnGroup.MONSTER, BrachymiteEntity::new).dimensions (EntityDimensions.fixed (1f, 0.7f)).build ());
+
 
 }

@@ -52,6 +52,7 @@ public class ModBiomes {
         DefaultBiomeFeatures.addMineables (builder);
         DefaultBiomeFeatures.addSprings (builder);
         DefaultBiomeFeatures.addFossils (builder);
+        DefaultBiomeFeatures.addFrozenTopLayer(builder);
 
     }
 

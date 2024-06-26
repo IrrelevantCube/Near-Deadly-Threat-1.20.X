@@ -30,6 +30,5 @@
     "recipes": [
       "minecraft:dominite_from_smelting_dominite"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

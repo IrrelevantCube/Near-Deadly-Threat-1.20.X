@@ -30,6 +30,5 @@
     "recipes": [
       "minecraft:dominite_from_blasting_dominite"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

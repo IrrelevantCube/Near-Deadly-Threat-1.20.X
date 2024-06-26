@@ -18,17 +18,19 @@ import net.minecraft.util.math.intprovider.UniformIntProvider;
 
 public class ModBlocks {
     public static final Block DOMINITE_ORE = registerBlock ("dominite_ore",
-            new ExperienceDroppingBlock (UniformIntProvider.create (5, 8), FabricBlockSettings.copyOf(Blocks.ANCIENT_DEBRIS).strength (3.5f, 2000).instrument(Instrument.CHIME).sounds(BlockSoundGroup.AMETHYST_BLOCK)));
+            new ExperienceDroppingBlock (UniformIntProvider.create (5, 8), FabricBlockSettings.copyOf(Blocks.ANCIENT_DEBRIS).strength (3.5f, 4).instrument(Instrument.CHIME).sounds(BlockSoundGroup.AMETHYST_BLOCK)));
     public static final Block ALUMINUM_ORE = registerBlock ("aluminum_ore",
-            new ExperienceDroppingBlock (UniformIntProvider.create (5, 8), FabricBlockSettings.copyOf(Blocks.IRON_ORE).strength (1.5f, 2000).instrument(Instrument.SNARE).sounds(BlockSoundGroup.STONE)));
+            new ExperienceDroppingBlock (UniformIntProvider.create (5, 8), FabricBlockSettings.copyOf(Blocks.IRON_ORE).strength (1.5f, 2).instrument(Instrument.SNARE).sounds(BlockSoundGroup.STONE)));
     public static final Block RAW_ALUMINUM_BLOCK = registerBlock ("raw_aluminum_block",
-            new Block (FabricBlockSettings.copyOf(Blocks.RAW_IRON_BLOCK).strength (1.5f, 2000).instrument(Instrument.SNARE).sounds(BlockSoundGroup.COPPER)));
+            new Block (FabricBlockSettings.copyOf(Blocks.RAW_IRON_BLOCK).strength (1.5f, 5).instrument(Instrument.SNARE).sounds(BlockSoundGroup.COPPER)));
     public static final Block ALUMINUM_BLOCK = registerBlock ("aluminum_block",
-            new Block (FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).strength (1.5f, 2000).instrument(Instrument.SNARE).sounds(BlockSoundGroup.COPPER)));
+            new Block (FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).strength (1.5f, 5).instrument(Instrument.SNARE).sounds(BlockSoundGroup.COPPER)));
     public static final Block IRON_II_ALUMINATE = registerBlock ("iron_ii_aluminate",
-            new Block (FabricBlockSettings.copyOf(Blocks.OBSIDIAN).strength (1.5f, 20000).instrument(Instrument.HAT).sounds(BlockSoundGroup.LANTERN)));
+            new Block (FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).strength (5.5f, 20).instrument(Instrument.HAT).sounds(BlockSoundGroup.LANTERN)));
+    public static final Block AMMONIUM_NITRATE = registerBlock ("ammonium_nitrate",
+            new AmmoniumNitrateBlock (FabricBlockSettings.create ().mapColor(MapColor.YELLOW).breakInstantly ().sounds (BlockSoundGroup.GRASS).burnable ().solidBlock (Blocks::never)));
     public static final Block CHRODOMACH_ORE = registerBlock ("chrodomach_ore",
-            new ExperienceDroppingBlock (UniformIntProvider.create (8, 12), FabricBlockSettings.copyOf(Blocks.ANCIENT_DEBRIS).strength (5.5f, 30000).instrument(Instrument.IRON_XYLOPHONE).sounds(BlockSoundGroup.AMETHYST_BLOCK)));
+            new ExperienceDroppingBlock (UniformIntProvider.create (8, 12), FabricBlockSettings.copyOf(Blocks.ANCIENT_DEBRIS).strength (5.5f, 5).instrument(Instrument.IRON_XYLOPHONE).sounds(BlockSoundGroup.AMETHYST_BLOCK)));
     public static final Block DOMINITE_BLOCK = registerBlock ("dominite_block",
             new Block(FabricBlockSettings.copyOf(Blocks.GOLD_BLOCK).instrument(Instrument.CHIME).sounds (BlockSoundGroup.AMETHYST_BLOCK)));
     public static final Block YELLOW_MERANTI_PLANKS = registerBlock ("yellow_meranti_planks",
