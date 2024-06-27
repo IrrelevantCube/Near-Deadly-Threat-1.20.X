@@ -8,6 +8,7 @@ import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.irrelevent.neardeadlythreat.block.ModBlocks;
 import net.irrelevent.neardeadlythreat.effect.ModEffects;
+import net.irrelevent.neardeadlythreat.effect.ModEffectsSequel;
 import net.irrelevent.neardeadlythreat.entity.ModEntities;
 import net.irrelevent.neardeadlythreat.entity.custom.BrachymiteEntity;
 import net.irrelevent.neardeadlythreat.entity.custom.BrachytusEntity;
@@ -33,6 +34,7 @@ public class NearDeadlyThreat implements ModInitializer {
 		ModBlocks.registerModBlocks();
 
 		ModEffects.registerEffects ();
+		ModEffectsSequel.registerEffects ();
 
 		FuelRegistry.INSTANCE.add(ModItems.DOMINITE_ISOTOPE, 2000);
 

@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.irrelevent.neardeadlythreat.NearDeadlyThreat;
 import net.irrelevent.neardeadlythreat.entity.ModEntities;
+import net.irrelevent.neardeadlythreat.item.custom.ModArmorItem;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -41,13 +42,15 @@ public class ModItems {
     public static final Item BRACHYTUS_STEEL_BOOTS = registerItem ("brachytus_steel_boots",
             new ArmorItem (ModArmorMaterials.BRACHYTUS_STEEL, ArmorItem.Type.BOOTS, new FabricItemSettings ()));
     public static final Item ALUMINATE_CHESTPLATE = registerItem ("aluminate_chestplate",
-            new ArmorItem (ModArmorMaterials.ALUMINATE, ArmorItem.Type.CHESTPLATE, new FabricItemSettings ()));
+            new ModArmorItem (ModArmorMaterials.ALUMINATE, ArmorItem.Type.CHESTPLATE, new FabricItemSettings ()));
     public static final Item ALUMINATE_HELMET = registerItem ("aluminate_helmet",
-            new ArmorItem (ModArmorMaterials.ALUMINATE, ArmorItem.Type.HELMET, new FabricItemSettings ()));
+            new ModArmorItem (ModArmorMaterials.ALUMINATE, ArmorItem.Type.HELMET, new FabricItemSettings ()));
     public static final Item ALUMINATE_LEGGINGS = registerItem ("aluminate_leggings",
-            new ArmorItem (ModArmorMaterials.ALUMINATE, ArmorItem.Type.LEGGINGS, new FabricItemSettings ()));
+            new ModArmorItem (ModArmorMaterials.ALUMINATE, ArmorItem.Type.LEGGINGS, new FabricItemSettings ()));
     public static final Item ALUMINATE_BOOTS = registerItem ("aluminate_boots",
-            new ArmorItem (ModArmorMaterials.ALUMINATE, ArmorItem.Type.BOOTS, new FabricItemSettings ()));
+            new ModArmorItem (ModArmorMaterials.ALUMINATE, ArmorItem.Type.BOOTS, new FabricItemSettings ()));
+
+
     private static void addItemsToIngredientTabItemGroup(FabricItemGroupEntries entries) {
 
     }

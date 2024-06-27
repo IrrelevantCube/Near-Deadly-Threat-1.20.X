@@ -22,6 +22,11 @@
   "item.ndt.brachytus_steel_leggings": "Brachytus Steel Leggings",
   "item.ndt.brachytus_steel_boots": "Brachytus Steel Boots",
 
+  "item.ndt.aluminate_helmet": "Aluminate Helmet",
+  "item.ndt.aluminate_chestplate": "Aluminate Chestplate",
+  "item.ndt.aluminate_leggings": "Aluminate Leggings",
+  "item.ndt.aluminate_steel_boots": "Aluminate Boots",
+
   "item.ndt.aluminum_ingot": "Aluminum Ingot",
   "item.ndt.raw_aluminum": "Raw Aluminum",
 
@@ -33,6 +38,8 @@
   "block.ndt.chrodomach_ore": "Chrodomach Ore",
   "block.ndt.dominite_block": "Block of Dominite",
   "block.ndt.chrodomach_block": "Block of Chrodomach",
+
+  "block.ndt.ammonium_nitrate": "Ammonium Nitrate",
 
   "block.ndt.aluminum_ore": "Aluminum Ore",
   "block.ndt.aluminum_block": "Block of Aluminum",
@@ -66,5 +73,6 @@
   "item.ndt.crab_legs": "Brachymite Crab Legs",
   "item.ndt.cooked_crab_legs": "Cooked Brachymite Crab Legs",
 
-  "effect.ndt.aqua_proficient": "Aqua Proficient"
+  "effect.ndt.aqua_proficient": "Aqua Proficient",
+  "effect.ndt.full_metal_jacket": "Full Metal Jacket"
 }

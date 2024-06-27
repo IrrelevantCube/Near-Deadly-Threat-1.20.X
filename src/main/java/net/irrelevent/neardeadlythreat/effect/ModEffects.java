@@ -13,18 +13,20 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class ModEffects{
-    public static StatusEffect AQUA_PROFICIENT;
 
+    public static StatusEffect FULL_METAL_JACKET;
     public static StatusEffect registerStatusEffect(String name) {
         return Registry.register (Registries.STATUS_EFFECT, new Identifier (NearDeadlyThreat.MOD_ID, name),
-                new AquaProficientMobEffect (StatusEffectCategory.NEUTRAL, 0x85FCB4 ).addAttributeModifier
-                        (EntityAttributes.GENERIC_ATTACK_SPEED, "AF8B6E3F-3328-4C0A-AA36-5BA2BB9DBEF3", 0.2f, EntityAttributeModifier.Operation.MULTIPLY_TOTAL));
+                new FullMetalJacketMobEffect (StatusEffectCategory.BENEFICIAL, 0x000100 ).addAttributeModifier
+                        (EntityAttributes.GENERIC_MAX_ABSORPTION, "b68798b8-a5af-41eb-baf3-6a5bd6822ae0", 0.2f, EntityAttributeModifier.Operation.MULTIPLY_TOTAL));
     }
+
 
     public static void registerEffects() {
         NearDeadlyThreat.LOGGER.info("Registering Mod Effects for " + NearDeadlyThreat.MOD_ID);
 
-        AQUA_PROFICIENT = registerStatusEffect ("aqua_proficient");
+        FULL_METAL_JACKET = registerStatusEffect ("full_metal_jacket");
+
     }
 
 }

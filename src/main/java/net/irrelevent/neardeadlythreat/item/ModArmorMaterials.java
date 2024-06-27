@@ -10,11 +10,11 @@ import net.minecraft.sound.SoundEvents;
 
 import java.util.function.Supplier;
 
-public enum ModArmorMaterials implements ArmorMaterial {
+public enum ModArmorMaterials implements ArmorMaterial, ModArmorMaterial {
     BRACHYTUS_STEEL("brachytus_steel", 30, new int[] {2, 20, 5, 1}, 20,
-            SoundEvents.ITEM_ARMOR_EQUIP_TURTLE, 5f, 1.0f, () -> Ingredient.ofItems (ModItems.BRACHYTUS_STEEL)),
-    ALUMINATE("aluminate", 5, new int[] {20, 20, 20, 20}, 20,
-            SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 1f, 0.0f, () -> Ingredient.ofItems (ModItems.ALUMINUM_INGOT, Items.IRON_INGOT))
+            SoundEvents.ITEM_ARMOR_EQUIP_TURTLE, 5f, 0.0f, 1.0f, () -> Ingredient.ofItems (ModItems.BRACHYTUS_STEEL)),
+    ALUMINATE("aluminate", 1, new int[] {1, 1, 1, 1}, 50,
+            SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 100000000000000000000000000000000000000f, 100000000000000000000000000000000000000.0f, -100000000.0f, () -> Ingredient.ofItems (ModItems.ALUMINUM_INGOT, Items.IRON_INGOT))
 
     ;
 
@@ -24,19 +24,21 @@ public enum ModArmorMaterials implements ArmorMaterial {
     private final int enchantability;
     private final SoundEvent equipSound;
     private final float toughness;
+    private final float blastDamageReduction;
     private final float knockbackResistance;
     private final Supplier<Ingredient> repairIngredient;
 
     private static final int[] BASE_DURABILITY = {11, 16, 15, 13};
 
     ModArmorMaterials(String name, int durabilityMultiplier, int[] protectionAmounts, int enchantability, SoundEvent equipSound,
-                      float toughness, float knockbackResistance, Supplier<Ingredient> repairIngredient) {
+                      float toughness, float blastDamageReduction, float knockbackResistance, Supplier<Ingredient> repairIngredient) {
         this.name = name;
         this.durabilityMultiplier = durabilityMultiplier;
         this.protectionAmounts = protectionAmounts;
         this.enchantability = enchantability;
         this.equipSound = equipSound;
         this.toughness = toughness;
+        this.blastDamageReduction = blastDamageReduction;
         this.knockbackResistance = knockbackResistance;
         this.repairIngredient = repairIngredient;
     }
@@ -74,6 +76,10 @@ public enum ModArmorMaterials implements ArmorMaterial {
     @Override
     public float getToughness() {
         return this.toughness;
+    }
+    @Override
+    public float getBlastDamageReduction() {
+        return this.blastDamageReduction;
     }
 
     @Override

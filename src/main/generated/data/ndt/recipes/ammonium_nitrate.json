@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "g": {
+      "block": "minecraft:gravel"
+    },
+    "t": {
+      "block": "ndt:tridymite"
+    },
+    "n": {
+      "block": "minecraft:tnt"
+    }
+  },
+  "pattern": [
+    "gtg",
+    "tnt",
+    "gtg"
+  ],
+  "result": {
+    "item": "ndt:ammonium_nitrate"
+  }
+}

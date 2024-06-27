@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "a": {
+      "item": "ndt:brachytus_steel"
+    },
+    "i": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "pattern": [
+    "iai",
+    "a a",
+    "   "
+  ],
+  "result": {
+    "item": "ndt:aluminate_helmet"
+  }
+}
