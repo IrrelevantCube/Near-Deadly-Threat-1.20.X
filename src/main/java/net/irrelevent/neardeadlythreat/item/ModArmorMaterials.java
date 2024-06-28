@@ -14,7 +14,7 @@ public enum ModArmorMaterials implements ArmorMaterial, ModArmorMaterial {
     BRACHYTUS_STEEL("brachytus_steel", 30, new int[] {2, 20, 5, 1}, 20,
             SoundEvents.ITEM_ARMOR_EQUIP_TURTLE, 5f, 0.0f, 1.0f, () -> Ingredient.ofItems (ModItems.BRACHYTUS_STEEL)),
     ALUMINATE("aluminate", 1, new int[] {1, 1, 1, 1}, 50,
-            SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 100000000000000000000000000000000000000f, 100000000000000000000000000000000000000.0f, -100000000.0f, () -> Ingredient.ofItems (ModItems.ALUMINUM_INGOT, Items.IRON_INGOT))
+            SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 1000000000000000000000f, 100000000000000000000000000000000000000.0f, -100000000.0f, () -> Ingredient.ofItems (ModItems.ALUMINUM_INGOT, Items.IRON_INGOT))
 
     ;
 

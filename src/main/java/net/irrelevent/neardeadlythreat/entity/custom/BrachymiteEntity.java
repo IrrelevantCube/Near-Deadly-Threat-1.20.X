@@ -85,8 +85,8 @@ public class BrachymiteEntity extends AnimalEntity implements Ownable{
         this.goalSelector.add (4, new WanderAroundGoal (this, 1.0));
         this.goalSelector.add (1, new StopAndLookAtEntityGoal (this, MobEntity.class, 8.0f));
         this.goalSelector.add (2, new LookAroundGoal (this));
-        this.goalSelector.add (5, new BrachymiteAttackGoal (this, 1d, true));
-        this.goalSelector.add (6, new MeleeAttackGoal (this, 1d, false));
+        this.goalSelector.add (5, new MeleeAttackGoal (this, 1d, false));
+        this.goalSelector.add (6, new BrachymiteAttackGoal (this, 1d, true));
         this.targetSelector.add (1, new RevengeGoal (this, RaiderEntity.class).setGroupRevenge (new Class[0]));
         this.targetSelector.add (3, new ActiveTargetGoal<PlayerEntity> ((MobEntity) this, PlayerEntity.class, true).setMaxTimeWithoutVisibility (300));
         this.targetSelector.add (4, new ActiveTargetGoal<TurtleEntity> ((MobEntity) this, TurtleEntity.class, false).setMaxTimeWithoutVisibility (300));

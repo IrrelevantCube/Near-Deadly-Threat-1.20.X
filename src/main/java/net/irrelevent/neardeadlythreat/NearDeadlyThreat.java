@@ -54,7 +54,7 @@ public class NearDeadlyThreat implements ModInitializer {
 
 		ModTrunkPlacerTypes.register ();
 
-		ModWorldGeneration.generatedModWorldGen ();
+		ModWorldGeneration.generateModWorldGen ();
 		ModStructures.registerStructureFeatures ();
 
 

@@ -168,7 +168,7 @@ public class BrachytusEntity extends SpellcastingAnimalEntity {
             private final BrachytusEntity brachytus;
 
             public LeaveWaterGoal(BrachytusEntity brachytus, double speed) {
-                super(brachytus, speed, 8, 20);
+                super(brachytus, speed, 20, 120);
                 this.brachytus = brachytus;
             }
 
@@ -220,7 +220,7 @@ public class BrachytusEntity extends SpellcastingAnimalEntity {
 
             public void tick() {
                 if (this.brachytus.getY() < (double)(this.minY - 1) && (this.brachytus.getNavigation().isIdle() || this.brachytus.hasFinishedCurrentPath())) {
-                    Vec3d vec3d = NoPenaltyTargeting.findTo(this.brachytus, 4, 8, new Vec3d(this.brachytus.getX(), (double)(this.minY - 1), this.brachytus.getZ()), 1.5707963705062866);
+                    Vec3d vec3d = NoPenaltyTargeting.findTo(this.brachytus, 60, 20, new Vec3d(this.brachytus.getX(), (double)(this.minY - 1), this.brachytus.getZ()), 1.5707963705062866);
                     if (vec3d == null) {
                         this.foundTarget = true;
                         return;

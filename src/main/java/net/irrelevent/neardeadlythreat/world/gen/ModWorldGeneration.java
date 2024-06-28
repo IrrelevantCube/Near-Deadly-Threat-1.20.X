@@ -1,8 +1,9 @@
 package net.irrelevent.neardeadlythreat.world.gen;
 
 public class ModWorldGeneration {
-    public static void generatedModWorldGen()
+    public static void generateModWorldGen()
     {ModOreGeneration.generatedOres ();
-    ModTreeGeneration.generateTrees ();}
+    ModTreeGeneration.generateTrees ();
+    ModEntityGeneration.addSpawns ();}
 
 }
