@@ -26,11 +26,11 @@ public class ModDimensions {
         context.register (TENEBRION_DIM_TYPE, new DimensionType (
                 OptionalLong.of (12000),
                 false,
-                false,
+                true,
                 false,
                 false,
                 16.0,
-                true,
+                false,
                 false,
                 -128,
                 256,

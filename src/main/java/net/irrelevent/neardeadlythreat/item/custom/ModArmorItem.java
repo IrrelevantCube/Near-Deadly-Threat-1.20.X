@@ -1,8 +1,8 @@
 package net.irrelevent.neardeadlythreat.item.custom;
 
 import com.google.common.collect.ImmutableMap;
+import net.irrelevent.neardeadlythreat.effect.ModEffects;
 import net.irrelevent.neardeadlythreat.item.ModArmorMaterials;
-import net.minecraft.enchantment.Enchantment;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
@@ -14,10 +14,11 @@ import net.minecraft.world.World;
 
 import java.util.Map;
 
+
 public class ModArmorItem extends ArmorItem {
     private static final Map<ArmorMaterial, StatusEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance> ())
-                    .put (ModArmorMaterials.ALUMINATE, new StatusEffectInstance (StatusEffects.REGENERATION, 999999999, 999999999,
+                    .put (ModArmorMaterials.ALUMINATE, new StatusEffectInstance (StatusEffects.REGENERATION, 999, 1,
                             false, false, false)).build ();
 
     public ModArmorItem(ArmorMaterial material, Type type, Settings settings) {

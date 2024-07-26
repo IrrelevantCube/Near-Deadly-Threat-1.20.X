@@ -3,6 +3,9 @@ package net.irrelevent.neardeadlythreat.item;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.irrelevent.neardeadlythreat.NearDeadlyThreat;
 import net.irrelevent.neardeadlythreat.block.ModBlocks;
+import net.irrelevent.neardeadlythreat.effect.ModEffects;
+import net.irrelevent.neardeadlythreat.potion.ModPotions;
+import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
@@ -26,6 +29,7 @@ public class ModItemGroups {
 
                     entries.add(ModItems.BRACHYTUS_SPAWN_EGG);
                     entries.add(ModItems.BRACHYMITE_SPAWN_EGG);
+
 
                     entries.add(ModBlocks.DOMINITE_ORE);
                     entries.add(ModBlocks.ALUMINUM_BLOCK);

@@ -1,0 +1,18 @@
+{
+  "name": "Fractured Yellow Meranti Forest",
+  "icon": "minecraft:dead_bush",
+  "category": "ndt:biomes_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Fractured Yellow Meranti Forests are bizarre to say the least, the trees that reside in the biome can only be described as 'fractured,' hence the name."
+    },
+    {
+      "type": "patchouli:image",
+      "images": ["ndt:textures/book_pictures/2024-07-26_12.08.01.png", "ndt:textures/book_pictures/2024-07-26_12.08.03.png", "ndt:textures/book_pictures/2024-07-26_12.08.12.png"],
+      "title": "Fractured Meranti Showcase",
+      "border": "true",
+      "text": "??????????????"
+    }
+  ]
+}

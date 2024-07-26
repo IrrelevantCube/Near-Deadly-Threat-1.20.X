@@ -4,17 +4,19 @@ package net.irrelevent.neardeadlythreat.effect;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectCategory;
-import net.minecraft.util.math.Vec3d;
 
 public class FullMetalJacketMobEffect extends StatusEffect {
-    protected FullMetalJacketMobEffect(StatusEffectCategory statusEffectCategory, int i) {
-    super(statusEffectCategory, i);
+    protected FullMetalJacketMobEffect(StatusEffectCategory statusEffectCategory, int color) {
+    super(statusEffectCategory, color);
 }
     @Override
     public void applyUpdateEffect(LivingEntity entity, int amplifier) {
         super.applyUpdateEffect(entity, amplifier);
-        if (entity.getAbsorptionAmount() <= 10000000.0F && !entity.getWorld().isClient) {
+        if (entity.getAbsorptionAmount() >= 10000000000.0F && !entity.getWorld().isClient) {
             entity.removeStatusEffect(this);
+        }
+        if (entity.getHealth() < entity.getMaxHealth()) {
+            entity.heal(200.0F);
         }
 
     }
@@ -25,7 +27,7 @@ public class FullMetalJacketMobEffect extends StatusEffect {
 
     public void onApplied(LivingEntity entity, int amplifier) {
         super.onApplied(entity, amplifier);
-        entity.setAbsorptionAmount(Math.max(entity.getAbsorptionAmount(), (float)(1999999999 * (200000 + amplifier))));
+        entity.setAbsorptionAmount(Math.max(entity.getAbsorptionAmount(), (float)(1999999999 * (200000000 + amplifier))));
     }
 
 

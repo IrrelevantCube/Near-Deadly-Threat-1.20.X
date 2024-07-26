@@ -1,0 +1,18 @@
+{
+  "name": "Desolate Ocean",
+  "icon": "minecraft:wither_rose",
+  "category": "ndt:biomes_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "The Desolate Ocean is a big, empty deadzone. Too saline for anything to live in . . . or so we assume"
+    },
+    {
+      "type": "patchouli:image",
+      "images": ["ndt:textures/book_pictures/2024-07-26_12.04.50.png", "ndt:textures/book_pictures/2024-07-26_12.04.57.png", "ndt:textures/book_pictures/2024-07-26_12.05.21.png"],
+      "title": "Desolate Ocean Showcase",
+      "border": "true",
+      "text": "Desolate Oceans are noticably darker than other bodies of water"
+    }
+  ]
+}

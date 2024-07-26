@@ -6,10 +6,8 @@ import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.irrelevent.neardeadlythreat.NearDeadlyThreat;
 import net.irrelevent.neardeadlythreat.entity.ModEntities;
 import net.irrelevent.neardeadlythreat.item.custom.ModArmorItem;
-import net.minecraft.item.ArmorItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroups;
-import net.minecraft.item.SpawnEggItem;
+import net.irrelevent.neardeadlythreat.potion.ModPotions;
+import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -25,6 +23,7 @@ public class ModItems {
     public static final Item TRIDYMITE_DUST = registerItem ("tridymite_dust", new Item(new FabricItemSettings ()));
     public static final Item BRACHYTUS_SHELL = registerItem ("brachytus_shell", new Item(new FabricItemSettings ()));
     public static final Item BRACHYTUS_STEEL = registerItem ("brachytus_steel", new Item(new FabricItemSettings ()));
+
 
 
     public static final Item CRAB_LEGS = registerItem ("crab_legs", new Item(new FabricItemSettings().food(ModFoodComponents.CRAB_LEGS)));

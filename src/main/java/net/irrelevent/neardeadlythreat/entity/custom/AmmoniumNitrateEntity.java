@@ -60,7 +60,7 @@ public class AmmoniumNitrateEntity extends Entity implements Ownable {
 
     public void tick() {
         if (!this.hasNoGravity()) {
-            this.setVelocity(this.getVelocity().add(0.0, -0.02, 0.0));
+            this.setVelocity(this.getVelocity().add(0.0, -0.04, 0.0));
         }
 
         this.move(MovementType.SELF, this.getVelocity());
@@ -88,7 +88,7 @@ public class AmmoniumNitrateEntity extends Entity implements Ownable {
 
     private void explode() {
         float f = 26.0F;
-        this.getWorld().createExplosion(this, this.getX(), this.getBodyY(0.0625), this.getZ(), 26.0F, World.ExplosionSourceType.TNT);
+        this.getWorld().createExplosion(this, this.getX(), this.getBodyY(0.003), this.getZ(), 26.0F, World.ExplosionSourceType.TNT);
     }
 
     protected void writeCustomDataToNbt(NbtCompound nbt) {

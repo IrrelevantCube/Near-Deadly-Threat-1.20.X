@@ -1,0 +1,18 @@
+{
+  "name": "Yellow Meranti Forest",
+  "icon": "ndt:yellow_meranti_wood",
+  "category": "ndt:biomes_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Yellow Meranti Forests are on the warmer side of biomes, where it is sparsely surrounded by yellow meranti trees. The trees are noted for their odd growing patterns"
+    },
+    {
+      "type": "patchouli:image",
+      "images": ["ndt:textures/book_pictures/2024-07-26_12.07.28.png", "ndt:textures/book_pictures/2024-07-26_12.07.37.png", "ndt:textures/book_pictures/2024-07-26_12.07.50.png"],
+      "title": "Yellow Meranti Showcase",
+      "border": "true",
+      "text": "General Yellow Meranti Trees are great, and tall, with very flimsy trunk support"
+    }
+  ]
+}

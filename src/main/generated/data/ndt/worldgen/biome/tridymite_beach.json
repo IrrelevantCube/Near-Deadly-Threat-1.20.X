@@ -107,12 +107,6 @@
     "axolotls": [],
     "creature": [
       {
-        "type": "ndt:brachytus",
-        "maxCount": 2,
-        "minCount": 1,
-        "weight": 1
-      },
-      {
         "type": "ndt:brachymite",
         "maxCount": 4,
         "minCount": 2,
@@ -138,6 +132,12 @@
         "maxCount": 4,
         "minCount": 4,
         "weight": 95
+      },
+      {
+        "type": "ndt:brachytus",
+        "maxCount": 2,
+        "minCount": 1,
+        "weight": 1
       },
       {
         "type": "minecraft:zombie_villager",

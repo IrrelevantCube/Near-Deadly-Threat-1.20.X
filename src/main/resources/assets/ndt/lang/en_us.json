@@ -14,6 +14,16 @@
   "block.ndt.tridymite": "Tridymite",
   "item.ndt.tridymite_dust": "Tridymite Dust",
 
+  "item.minecraft.potion.effect.aegis_potion": "Potion of Aegis",
+  "item.minecraft.splash_potion.effect.aegis_potion": "Splash Potion of Aegis",
+  "item.minecraft.lingering_potion.effect.aegis_potion": "Lingering Potion of Aegis",
+  "item.minecraft.potion.effect.long_aegis_potion": "Potion of Aegis +",
+  "item.minecraft.splash_potion.effect.long_aegis_potion": "Splash Potion of Aegis +",
+  "item.minecraft.lingering_potion.effect.long_aegis_potion": "Lingering Potion of Aegis +",
+  "item.minecraft.potion.effect.strong_aegis_potion": "Potion of Aegis V",
+  "item.minecraft.splash_potion.effect.strong_aegis_potion": "Splash Potion of Aegis V",
+  "item.minecraft.lingering_potion.effect.strong_aegis_potion": "Lingering Potion of Aegis V",
+
   "item.ndt.brachytus_spawn_egg": "Brachytus Spawn Egg",
   "item.ndt.brachymite_spawn_egg": "Brachymite Spawn Egg",
 
